@@ -19,7 +19,7 @@ const ItemCount = () => {
     return(
         <Card sx={{ maxWidth: 275 }} className="contenedorContador">
             <CardContent>
-                <Button variant="text" disabled>-</Button>
+                <Button variant="text" onClick={()=>setCount(count-1)} disabled={count<1}>-</Button>
                 <Button variant="outlined">{count}</Button>
                 <Button variant="text" onClick={()=>setCount(count+1)} disabled={count>=stock}>+</Button> 
             </CardContent>
