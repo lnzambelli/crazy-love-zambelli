@@ -13,7 +13,7 @@ const ItemCount = () => {
     const [myMsj, setMyMsj] = useState('No se agregaron productos')
 
     const onAdd = () =>{
-       setMyMsj("Se agregaron "+count+" productos ")
+       setMyMsj(`Se agregaron ${count} productos `)
     }
 
     return(

@@ -12,6 +12,8 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
 import CartWidget from '../CartWidget/CartWidget';
+import { blueGrey } from '@mui/material/colors';
+
 
 const pages = ['Productos', 'Mis Compras', 'Contacto'];
 
