@@ -1,0 +1,8 @@
+.cartButton{
+    color: #151718
+}
+
+.cartButton:hover{
+    font-weight: 600;
+}
+

@@ -1,1 +1,40 @@
+.navbarContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #c796d3;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li{
+    list-style: none;
+    color: #151718;
+}
+
+.btnPage{
+    color: #151718;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+.btnPage:hover{
+    color: #151718;
+    font-weight: 600;
+}
+
+.logo a{
+    color: #151718;
+    cursor: pointer;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.logo a:hover{
+    font-weight: 600;
+}
 

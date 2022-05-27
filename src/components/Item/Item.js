@@ -8,9 +8,6 @@ import CardMedia from '@mui/material/CardMedia';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
-import Fab from '@mui/material/Fab';
-import NavigationIcon from '@mui/icons-material/Navigation';
-import Badge from '@mui/material/Badge';
 
 const Item = ({codArt,title,description, price, urlImg}) => {
 
@@ -23,7 +20,7 @@ const Item = ({codArt,title,description, price, urlImg}) => {
         <CardActionArea>
             
             <CardMedia component="img" height="" image={urlImg} alt={title} className="imgCardItem" onError={e=>{e.target.src=auxUrl}}/>
-            <CardContent>
+            <CardContent className='contentCardItem'>
             <Typography gutterBottom variant="h5" component="div">
                 {title}
             </Typography>
@@ -32,7 +29,7 @@ const Item = ({codArt,title,description, price, urlImg}) => {
             </Typography>
             </CardContent>
         </CardActionArea>
-        <CardActions >
+        <CardActions  className='actionCardItem'>
             <Button  className='btnCart' variant="contained" endIcon={<AddShoppingCartIcon />}>$ {price}</Button>
         </CardActions>
     </Card>

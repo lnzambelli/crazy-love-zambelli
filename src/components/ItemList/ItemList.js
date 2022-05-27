@@ -6,7 +6,7 @@ import { Grid } from '@mui/material';
 const ItemList = ({title, items}) => {
   return(
     <>
-    <h1>{title}</h1>
+    <h1 className='titleProduct'>{title}</h1>
     <Grid container spacing={2}>
         {
             items.map( ({codArt,title,description,price, urlImg}) => {
