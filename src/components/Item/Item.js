@@ -18,7 +18,6 @@ const Item = ({codArt,title,description, price, urlImg}) => {
   return (
     <Card sx={{maxWidth: 250 }} className="cardItem">
         <CardActionArea>
-            
             <CardMedia component="img" height="" image={urlImg} alt={title} className="imgCardItem" onError={e=>{e.target.src=auxUrl}}/>
             <CardContent className='contentCardItem'>
             <Typography gutterBottom variant="h5" component="div">
@@ -30,7 +29,7 @@ const Item = ({codArt,title,description, price, urlImg}) => {
             </CardContent>
         </CardActionArea>
         <CardActions  className='actionCardItem'>
-            <Button  className='btnCart' variant="contained" endIcon={<AddShoppingCartIcon />}>$ {price}</Button>
+            <Button className='btnCart'  endIcon={<AddShoppingCartIcon />}>$ {price}</Button>
         </CardActions>
     </Card>
   )

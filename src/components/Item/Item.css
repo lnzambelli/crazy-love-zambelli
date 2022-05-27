@@ -1,22 +1,21 @@
 .btnCart{
    width: 100%;
+   background-color: #fff;
+   color: black;
 }
 
 .cardItem{
     width: 100%;
     margin: 0 24px;
-    box-shadow: #3fc 0px 3px 8px;
+    border: 1px solid rgba(51,51,51,.1);
 }
 .cardItem:hover{
     width: 100%;
     margin: 0 24px;
+    box-shadow: rgb(161, 163, 163) 0px 3px 8px;
     transform: translateY(-2px);
 }
 
 .contentCardItem{
-   
-}
-
-.actionCardItem{
-   
+    border-top: 1px solid rgba(51,51,51,.1);
 }
