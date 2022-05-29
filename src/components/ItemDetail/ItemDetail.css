@@ -1,0 +1,15 @@
+.containerDetail{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.imgDetail{
+    width: 50%;
+}
+
+.infoDetail{
+    width: 50%;
+    text-align: start;
+}
+

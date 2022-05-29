@@ -1,10 +1,8 @@
 import Button from '@mui/material/Button';
 import { useState } from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import './ItemCount.css';
-import MyAlert from '../MyAlert/MyAlert';
 
 const ItemCount = () => {
 
@@ -17,16 +15,12 @@ const ItemCount = () => {
     }
 
     return(
-        <Card sx={{ maxWidth: 275 }} className="contenedorContador">
+        <Card sx={{ maxWidth: 300 }} className="contenedorContador">
             <CardContent>
                 <Button variant="text" onClick={()=>setCount(count-1)} disabled={count<1}>-</Button>
                 <Button variant="outlined">{count}</Button>
                 <Button variant="text" onClick={()=>setCount(count+1)} disabled={count>=stock}>+</Button> 
             </CardContent>
-            <CardActions>
-                <Button variant="contained" onClick={onAdd}>Agregar al carrito</Button>
-            </CardActions>
-            <MyAlert text={myMsj} type="success" ></MyAlert>
       </Card>
       
     )
