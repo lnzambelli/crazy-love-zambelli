@@ -8,11 +8,6 @@ const ItemCount = () => {
 
     const [count, setCount] = useState(1)
     const [stock, setStock] = useState(10)
-    const [myMsj, setMyMsj] = useState('No se agregaron productos')
-
-    const onAdd = () =>{
-       setMyMsj(`Se agregaron ${count} productos `)
-    }
 
     return(
         <Card sx={{ maxWidth: 300 }} className="contenedorContador">
@@ -21,6 +16,7 @@ const ItemCount = () => {
                 <Button variant="outlined">{count}</Button>
                 <Button variant="text" onClick={()=>setCount(count+1)} disabled={count>=stock}>+</Button> 
             </CardContent>
+            <Button variant="contained">Agregar al carrito</Button>
       </Card>
       
     )

@@ -8,6 +8,7 @@ import CardMedia from '@mui/material/CardMedia';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 
 const Item = ({codArt,title,description, price, urlImg}) => {
 
@@ -17,17 +18,19 @@ const Item = ({codArt,title,description, price, urlImg}) => {
   
   return (
     <Card sx={{maxWidth: 250 }} className="cardItem">
-        <CardActionArea>
-            <CardMedia component="img" height="" image={urlImg} alt={title} className="imgCardItem" onError={e=>{e.target.src=auxUrl}}/>
-            <CardContent className='contentCardItem'>
-            <Typography gutterBottom variant="h5" component="div">
-                {title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-                {description} 
-            </Typography>
-            </CardContent>
-        </CardActionArea>
+        <Link to={`/producto/${codArt}`}>
+            <CardActionArea>
+                <CardMedia component="img" height="" image={urlImg} alt={title} className="imgCardItem" onError={e=>{e.target.src=auxUrl}}/>
+                <CardContent className='contentCardItem'>
+                <Typography gutterBottom variant="h5" component="div">
+                    {title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    {description} 
+                </Typography>
+                </CardContent>
+            </CardActionArea>
+        </Link>
         <CardActions  className='actionCardItem'>
             <Button className='btnCart'  endIcon={<AddShoppingCartIcon />}>$ {price}</Button>
         </CardActions>

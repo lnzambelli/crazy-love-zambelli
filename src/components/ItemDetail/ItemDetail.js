@@ -4,7 +4,6 @@ import './ItemDetail.css'
 import Rating from '@mui/material/Rating';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import Button from '@mui/material/Button';
 import ItemCount from './../ItemCount/ItemCount'
 
 const ItemDetail = ({data}) => {
@@ -14,18 +13,17 @@ const ItemDetail = ({data}) => {
     const [value, setValue] = React.useState(2);
     return (
             <Card  className="containerDetail" >
-            <img src={data.urlImg} className="imgDetail"></img>
-            <Card className='infoDetail'>
-                <h1>{data.title}</h1>
-                <Rating name="simple-controlled" value={value} onChange={(event, newValue) => {setValue(newValue);}}/>
-                <h2>${data.price}</h2>
-                <Autocomplete disablePortal  options={fragrance}sx={{ width: 300 }} renderInput={(params) => <TextField {...params} label="Fragancia" />}/>
-                <Autocomplete disablePortal  options={size}sx={{ width: 300 }} renderInput={(params) => <TextField {...params} label="Tamaño" />}/>
-                <ItemCount/>
-                <p>{data.description}</p>
-                <Button variant="contained">Agregar al carrito</Button>
-            </Card>
-            
+                <img src={data.urlImg} className="imgDetail"></img>
+                <Card className='infoDetail'>
+                    <h1>{data.title}</h1>
+                    <Rating name="simple-controlled" value={value} onChange={(event, newValue) => {setValue(newValue);}}/>
+                    <h2>${data.price}</h2>
+                    <Autocomplete disablePortal  options={fragrance}sx={{ width: 300 }} renderInput={(params) => <TextField {...params} label="Fragancia" />}/>
+                    <Autocomplete disablePortal  options={size}sx={{ width: 300 }} renderInput={(params) => <TextField {...params} label="Tamaño" />}/>
+                    <ItemCount/>
+                    <p>{data.description}</p>
+                   
+                </Card>
         </Card>  
     )
 }

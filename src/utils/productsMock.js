@@ -4,6 +4,7 @@ const listItems = [
         title : 'Textil',
         description : "descripcion del producto",
         price : 290,
+        category:"saphirus",
         urlImg: 'https://saphirus.com.ar/wp-content/uploads/2022/04/textil_naranjapimienta-800x800.jpg',
     },
     {
@@ -11,6 +12,7 @@ const listItems = [
         title : 'Difusor',
         description : "descripcion del producto",
         price : 850,
+        category:"saphirus",
         urlImg: 'https://saphirus.com.ar/wp-content/uploads/2022/04/difusor-premium-lavanda-y-romero-01-016-800x800.jpg',
     },
     {
@@ -18,6 +20,7 @@ const listItems = [
         title : 'Air Cool',
         description : "descripcion del producto",
         price : 360,
+        category:"tulia",
         urlImg: 'https://saphirus.com.ar/wp-content/uploads/2022/04/1ovA3O26hl4h9iFMgkZjhLNa5S9eYMqLJccmzS4U-1-800x800.jpeg',
     },
     {
@@ -25,6 +28,7 @@ const listItems = [
         title : 'Equipo',
         description : "descripcion del producto",
         price : 1300,
+        category:"tulia",
         urlImg: 'https://saphirus.com.ar/wp-content/uploads/2022/04/Red-Blood-430x430.png',
     },
     {
@@ -32,18 +36,9 @@ const listItems = [
         title : 'Titulo',
         description : "Prueba de img con error",
         price : 500,
-        urlImg: '',
-    },
-    
+        category:"saphirus",
+        urlImg: '/img-not-found.png',
+    },  
 ]
 
-const item = {
-    codArt: 1,
-    title : 'Textil',
-    description : "descripcion del producto",
-    price : 290,
-    urlImg: 'https://saphirus.com.ar/wp-content/uploads/2022/04/textil_naranjapimienta-800x800.jpg',
-}
-
 export default listItems
-export { item }

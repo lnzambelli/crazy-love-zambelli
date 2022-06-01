@@ -2,7 +2,6 @@ import './ItemListContainer.css'
 import ItemList from "../ItemList/ItemList"
 import { useState, useEffect } from 'react';
 import listItems  from '../../utils/productsMock'
-import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
 
 const ItemListContainer = () => {
 
@@ -26,7 +25,6 @@ const ItemListContainer = () => {
     return(
         <>
             <ItemList title={'Mis Productos'} items={items} ></ItemList>
-            <ItemDetailContainer></ItemDetailContainer>
         </>
     )
 }

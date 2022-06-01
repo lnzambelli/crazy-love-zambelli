@@ -1,26 +1,26 @@
 import React from 'react'
 import { useEffect, useState} from "react"
 import ItemDetail from '../ItemDetail/ItemDetail'
-import { item } from './../../utils/productsMock'
+import listItems from './../../utils/productsMock'
+import { useParams, useNavigate  } from "react-router-dom"
 
 const ItemDetailContainer = () => {
-    
+    const { id } = useParams()
+    const navigate = useNavigate()
     const [product , setProduct] = useState({})
     
-    const getItem = () => {
-        return new Promise( (resolve, reject) => {
-            setTimeout(() => {
-                resolve(item)
-            }, 2000)
-        })
-    }
-
     useEffect(() => {
-        getItem()
-        .then( (res) => {
-            setProduct(res)
-        })
-    }, [])
+
+        if(productFilter === undefined){
+            navigate('/notFound')
+        }else {
+            setProduct(productFilter)
+        }
+    }, [id])
+
+    const productFilter = listItems.find( (product) => {
+        return product.codArt == id
+    })
 
     return(
         <>
