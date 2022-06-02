@@ -4,19 +4,24 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import './ItemCount.css';
 
-const ItemCount = () => {
+const ItemCount = ({cantidad, setCantidad, setShowButton}) => {
 
-    const [count, setCount] = useState(1)
-    const [stock, setStock] = useState(10)
+    const addCount = () => {
+        setCantidad(cantidad+1)
+    }
+
+    const removeCount = () => {
+        setCantidad(cantidad-1)
+    }
 
     return(
         <Card sx={{ maxWidth: 300 }} className="contenedorContador">
             <CardContent>
-                <Button variant="text" onClick={()=>setCount(count-1)} disabled={count<1}>-</Button>
-                <Button variant="outlined">{count}</Button>
-                <Button variant="text" onClick={()=>setCount(count+1)} disabled={count>=stock}>+</Button> 
+                <Button variant="text" onClick={removeCount} disabled={cantidad<1}>-</Button>
+                <Button variant="outlined">{cantidad}</Button>
+                <Button variant="text" onClick={addCount} disabled={cantidad>=10}>+</Button> 
             </CardContent>
-            <Button variant="contained">Agregar al carrito</Button>
+            <Button variant="contained"onClick={()=>setShowButton(true)}>Agregar al carrito</Button>
       </Card>
       
     )
