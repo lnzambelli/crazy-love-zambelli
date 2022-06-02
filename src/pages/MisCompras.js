@@ -1,8 +1,9 @@
 import React from 'react'
+import BannerPage from '../components/BannerPage/BannerPage'
 
 const MisCompras = () => {
   return (
-    <div>MisCompras</div>
+    <BannerPage title="Mis Compras" />
   )
 }
 
