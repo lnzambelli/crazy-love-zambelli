@@ -7,8 +7,14 @@ import CartWidget from '../CartWidget/CartWidget';
 import {Link} from 'react-router-dom'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import SwitchTheme from '../SwitchTheme/SwitchTheme'
+
+import { useContext } from "react";
+import ThemeContext from '../../context/ThemeContext';
 
 const NavBar = () => {
+
+    const { darkTheme } = useContext(ThemeContext)
 
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -20,8 +26,8 @@ const NavBar = () => {
     };
 
   return (
-    <AppBar position="static">
-        <Toolbar className='navbarContainer'>
+    <AppBar position="static" >
+        <Toolbar className= {`navbarContainer ${darkTheme && 'dark-mode'}`}>
             <div className='logo'>
                 <Link to="/home">
                     <a>CRAZY LOVE</a>
@@ -60,6 +66,7 @@ const NavBar = () => {
                     </Link>
                 </li>
             </ul>
+            <SwitchTheme/>
             <Link to="/cart">
                 <CartWidget />
             </Link>
