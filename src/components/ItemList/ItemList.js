@@ -9,11 +9,11 @@ const ItemList = ({title, items}) => {
     <h1 className='titleProduct'>{title}</h1>
     <Grid container spacing={2}>
         {
-            items.map( ({codArt,title,description,price, urlImg}) => {
+            items.map( ({codArt,title,description,price,quantity, urlImg}) => {
 
                 return(
                     <Grid item md={3} key={codArt} className="itemsContainer">
-                        <Item codArt={codArt} title={title} description={description} price={price} urlImg={urlImg} ></Item>
+                        <Item codArt={codArt} title={title} description={description} price={price} urlImg={urlImg} quantity={quantity} ></Item>
                     </Grid>
                 )
             })

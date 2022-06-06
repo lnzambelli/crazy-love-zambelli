@@ -6,3 +6,39 @@
     font-weight: 600;
 }
 
+.cartImg{
+    width: 50px;
+}
+
+.cartInfo{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.cartPrice{
+    margin-left: 8px;
+}
+
+.cartContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartTitle{
+    text-align: center;
+}
+
+.cartBtnInit{
+
+}
+
+.cartBtnClear{
+    
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+}
