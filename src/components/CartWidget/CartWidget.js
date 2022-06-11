@@ -27,6 +27,7 @@ const CartWidget = () => {
 
     return(
         <>
+            {totalQuantity!=0 && 
             <IconButton size="large" edge="start" 
                         aria-controls={open ? 'basic-menu' : undefined}
                         aria-haspopup="true"
@@ -36,7 +37,7 @@ const CartWidget = () => {
                         <ShoppingCartIcon className='cartButton'/>
                     </Badge>
             </IconButton>
-            
+            }
             <Menu
                 anchorEl={anchorEl}
                 id="account-menu"
