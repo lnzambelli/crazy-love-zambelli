@@ -3,30 +3,33 @@ import ItemList from "../components/ItemList/ItemList"
 import listItems from "../utils/productsMock"
 import { useParams } from 'react-router-dom'
 
+//firestore
+import {collection, getDocs} from 'firebase/firestore'
+import db from '../utils/firebaseConfig'
+
 const Productos = () => {
   const [products, setProducts] = useState([])
   const { category } = useParams()
 
   useEffect( () => {
-      setProducts([])
-      getProducts()
-      .then( (response) => {
-          //setProducts(response)
-          filterByCategory(response)
-      })
+    getProducts().then((prod)=>{  
+        filterByCategory(prod)
+    })
   }, [category])
   
-  const getProducts = () => {
-      return new Promise( (resolve, reject) => {
-          // setTimeout(() => {
-              resolve(listItems)
-          // }, 4000)
-      })
-  }  
+  const getProducts = async () =>{
+    const productSnapshot = await getDocs(collection(db,"products"));
+    
+    const productList = productSnapshot.docs.map((doc)=>{
+        let product = doc.data()
+        product.id = doc.id
+        return product
+    })
+    return productList
+} 
 
   const filterByCategory = (array) => {
-    setProducts(array.filter( item=> item.category == category)) 
-         
+    setProducts(array.filter( item=> item.category == category))       
   }
 
   return(

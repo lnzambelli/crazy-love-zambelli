@@ -67,9 +67,7 @@ const NavBar = () => {
                 </li>
             </ul>
             <SwitchTheme/>
-            <Link to="/cart">
-                <CartWidget />
-            </Link>
+            <CartWidget />
         </Toolbar>
     </AppBar>
   ) 

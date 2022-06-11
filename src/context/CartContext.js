@@ -5,20 +5,30 @@ const CartContext = createContext();
 const CartProvider = ({children}) => {
 
     const [cardListItems, setCardListItems] = useState([])
+    const [totalPrice, setTotalPrice] = useState(0)
+    const [totalQuantity, setTotalQuantity] = useState(0)
 
     const addProductToCart = (product) => {
-        let isInCart = cardListItems.find(cartProduct => cartProduct.codArt === product.codArt)
+        let isInCart = cardListItems.find(cartProduct => cartProduct.id === product.id)
         if(!isInCart) { 
             setCardListItems(cardListItems => [...cardListItems, product])
+            setTotalPrice(totalPrice+(product.price*Number(product.quantity) ))
+            setTotalQuantity(totalQuantity + Number(product.quantity))
         }
+        
     }
 
     const deleteProduct = (product) => {
-        setCardListItems(cardListItems.filter( cartProduct => cartProduct.codArt !== product.codArt))
+        setCardListItems(cardListItems.filter( cartProduct => cartProduct.id !== product.id))
+        setTotalPrice(totalPrice - product.price)
+        setTotalQuantity(totalQuantity - product.quantity)
+       
     }
     
     const clear = () =>{
         setCardListItems([])
+        setTotalPrice(0)
+        setTotalQuantity(0)
     }
 
 
@@ -26,6 +36,9 @@ const CartProvider = ({children}) => {
         cardListItems,
         addProductToCart,
         deleteProduct,
+        totalPrice,
+        totalQuantity,
+        setTotalQuantity,
         clear
     }
 

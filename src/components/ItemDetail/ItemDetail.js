@@ -7,15 +7,23 @@ import Autocomplete from '@mui/material/Autocomplete';
 import ItemCount from './../ItemCount/ItemCount'
 import {Link} from 'react-router-dom'
 import Button from '@mui/material/Button';
+import CartContext from '../../context/CartContext';
+import { useContext, useState } from "react";
 
 const ItemDetail = ({data}) => {
 
     const fragrance = ['Vainilla', 'Citrus',"Bebe"];
     const size = ['250cc', '500cc',"750cc"];
-    const [value, setValue] = React.useState(2);
+    const [value, setValue] = useState(2);
     
-    const [showButton, setShowButton] = React.useState(false);
-    const [cantidad, setCantidad] = React.useState(1);
+    const [showButton, setShowButton] = useState(false);
+    const [cantidad, setCantidad] = useState(1);
+    const { addProductToCart } = useContext(CartContext)
+
+    const agregar = () => {
+        data.quantity=cantidad
+        addProductToCart(data)
+    };
 
     return (
             <Card  className="containerDetail" >
@@ -30,7 +38,8 @@ const ItemDetail = ({data}) => {
                     {!showButton ? 
                     <ItemCount cantidad={cantidad} setCantidad={setCantidad} setShowButton={setShowButton}/>
                     :
-                    <Button disableRipple  variant='text' color='inherit'className='btnPage'><Link to="/cart">Finalizar Compra</Link></Button>
+                    <Button disableRipple  variant='text' color='inherit'className='btnPage' onClick={()=>agregar()}
+                    ><Link to="/cart">Finalizar Compra</Link></Button>
                     }
                 </Card>
         </Card>  

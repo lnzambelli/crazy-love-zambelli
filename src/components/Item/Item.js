@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 import CartContext from '../../context/CartContext'
 
-const Item = ({codArt,title,description, price, quantity, urlImg}) => {
+const Item = ({id,title,description, price, quantity, urlImg}) => {
 
     const {addProductToCart} = useContext(CartContext)
 
@@ -21,7 +21,7 @@ const Item = ({codArt,title,description, price, quantity, urlImg}) => {
   
   return (
     <Card sx={{maxWidth: 250 }} className="cardItem">
-        <Link to={`/producto/${codArt}`}>
+        <Link to={`/producto/${id}`}>
             <CardActionArea>
                 <CardMedia component="img" height="" image={urlImg} alt={title} className="imgCardItem" onError={e=>{e.target.src=auxUrl}}/>
                 <CardContent className='contentCardItem'>
@@ -35,7 +35,7 @@ const Item = ({codArt,title,description, price, quantity, urlImg}) => {
             </CardActionArea>
         </Link>
         <CardActions  className='actionCardItem'>
-            <Button className='btnCart' onClick={()=>addProductToCart({codArt,title,description, price, quantity, urlImg})} endIcon={<AddShoppingCartIcon />}>$ {price}</Button>
+            <Button className='btnCart' onClick={()=>addProductToCart({id,title,description, price, quantity, urlImg})} endIcon={<AddShoppingCartIcon />}>$ {price}</Button>
         </CardActions>
     </Card>
   )

@@ -3,6 +3,10 @@ import ItemList from "../ItemList/ItemList"
 import { useState, useEffect } from 'react';
 import listItems  from '../../utils/productsMock'
 
+//firestore
+import {collection, getDocs} from 'firebase/firestore'
+import db from '../../utils/firebaseConfig'
+
 const ItemListContainer = () => {
 
     const [items, setItems] = useState([])
@@ -13,14 +17,28 @@ const ItemListContainer = () => {
                 resolve(listItems)
             }, 2000)
         })
-    }  
-  
+    } 
+
+    
     useEffect( () => {
-        getItems()
-        .then( response => setItems(response))
-        .catch( err => console.log(err))
-        .finally( () => {})
+        getProducts().then((prod)=>{  
+            setItems(prod)
+        })
+       
     }, [])
+
+    const getProducts = async () =>{
+        const productSnapshot = await getDocs(collection(db,"products"));
+        
+        const productList = productSnapshot.docs.map((doc)=>{
+            let product = doc.data()
+            product.id = doc.id
+            return product
+        })
+        return productList
+    } 
+    
+  
 
     return(
         <>

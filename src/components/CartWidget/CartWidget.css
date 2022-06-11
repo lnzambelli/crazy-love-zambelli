@@ -38,6 +38,10 @@
     
 }
 
+.cartBtnIrCompra{
+    width: 100%;
+}
+
 .btnContainer{
     display: flex;
     justify-content: center;

@@ -9,12 +9,14 @@ import { Link } from 'react-router-dom';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Button from '@mui/material/Button';
 import CartContext from '../../context/CartContext';
+import Badge from '@mui/material/Badge';
 
 const CartWidget = () => {
 
-    const { cardListItems, deleteProduct, clear } = useContext(CartContext)
+    const { cardListItems, deleteProduct, clear, totalQuantity } = useContext(CartContext)
 
     const [anchorEl, setAnchorEl] = useState(null);
+
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -30,7 +32,9 @@ const CartWidget = () => {
                         aria-haspopup="true"
                         aria-expanded={open ? 'true' : undefined}
                         onClick={handleClick} >
-                    <ShoppingCartIcon className='cartButton'/>
+                    <Badge badgeContent={totalQuantity} color="primary">
+                        <ShoppingCartIcon className='cartButton'/>
+                    </Badge>
             </IconButton>
             
             <Menu
@@ -71,31 +75,43 @@ const CartWidget = () => {
                 >
                 <p className='cartTitle'>Carrito de Compras</p>
                 <Divider />
-                {cardListItems.map( (cartProduct) => {
-                    return(
-                        <MenuItem className='cartContent' key={cartProduct.codArt}>
-                            <div >
-                                <img className='cartImg' src={`${cartProduct.urlImg}`} /> 
-                            </div>
-                            <div className='cartInfo'>
-                                <p>{cartProduct.quantity} {cartProduct.title}</p>
-                                <span className='cartPrice'>$ {cartProduct.price}</span>
-                            </div>
-                            <div className='' onClick={()=>deleteProduct(cartProduct.codArt)}>
-                                <DeleteIcon  />
-                            </div>
-                        </MenuItem>
-                    )
-                })}
-                
-                <Divider />
-                <div className='btnContainer'>
-                    <Button className="cartBtnInit"><Link to="/cart" >Iniciar la compra</Link></Button>
-                </div>
-                <Divider />
-                <div className='btnContainer' >
-                    <Button className="cartBtnClear" onClick={()=>clear()}>Vaciar Carrito</Button>
-                </div>
+                    {cardListItems.length === 0 && (
+                        <>
+                            <p>No hay productos agregados al carrito</p>
+                            <Button className="cartBtnIrCompra"><Link  to="/productos/saphirus" >Ir a comprar!</Link></Button>
+                        </>
+                    )}
+                    
+                    {cardListItems.map( (cartProduct) => {
+                        return(
+                            <MenuItem className='cartContent' key={cartProduct.id}>
+                                <div >
+                                    <img className='cartImg' src={`${cartProduct.urlImg}`} /> 
+                                </div>
+                                <div className='cartInfo'>
+                                    <p>{cartProduct.quantity} {cartProduct.title}</p>
+                                    <span className='cartPrice'>$ {cartProduct.price}</span>
+                                </div>
+                                <div className='' onClick={()=>deleteProduct(cartProduct)}>
+                                    <DeleteIcon  />
+                                </div>
+                            </MenuItem>
+                        )
+                    })}
+
+
+                    {cardListItems.length !== 0 && (
+                        <>
+                        <Divider />
+                        <div className='btnContainer'>
+                            <Button className="cartBtnInit"><Link to="/cart" >Confirmar</Link></Button>
+                        </div>
+                        <Divider />
+                        <div className='btnContainer' >
+                            <Button className="cartBtnClear" onClick={()=>clear()}>Vaciar Carrito</Button>
+                        </div>
+                    </>
+                     )}
             </Menu>
       </>
     )
