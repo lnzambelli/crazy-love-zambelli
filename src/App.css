@@ -6,12 +6,3 @@
   width: 80px;
   height: 80px;
 }
-
-form.form-contact {
-  display: flex;
-  flex-direction: column;
-}
-
-form.form-contact > div {
-  margin-bottom: 15px;
-}

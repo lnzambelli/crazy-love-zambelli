@@ -27,7 +27,7 @@ const NavBar = () => {
 
   return (
     <AppBar position="static" >
-        <Toolbar className= {`navbarContainer ${darkTheme && 'dark-mode'}`}>
+        <Toolbar className= {`navbarContainer ${darkTheme && 'dark-mode'}`} style={{padding: '0'}}>
             <div className='logo'>
                 <Link to="/home">
                     <a>CRAZY LOVE</a>
