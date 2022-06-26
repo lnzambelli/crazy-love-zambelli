@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import ItemList from "../components/ItemList/ItemList"
-import listItems from "../utils/productsMock"
 import { useParams } from 'react-router-dom'
+import LinearProgress from '@mui/material/LinearProgress';
+import Stack from '@mui/material/Stack';
 
 //firestore
 import {collection, getDocs} from 'firebase/firestore'
@@ -10,6 +11,7 @@ import db from '../utils/firebaseConfig'
 const Productos = () => {
   const [products, setProducts] = useState([])
   const { category } = useParams()
+  const [cargando, setCargando] = useState(false)
 
   useEffect( () => {
     getProducts().then((prod)=>{  
@@ -18,6 +20,7 @@ const Productos = () => {
   }, [category])
   
   const getProducts = async () =>{
+    setCargando(true)
     const productSnapshot = await getDocs(collection(db,"products"));
     
     const productList = productSnapshot.docs.map((doc)=>{
@@ -25,6 +28,7 @@ const Productos = () => {
         product.id = doc.id
         return product
     })
+    setCargando(false)
     return productList
 } 
 
@@ -34,7 +38,14 @@ const Productos = () => {
 
   return(
       <div className='general-container'>
-          <ItemList title={'LISTADO DE PRODUCTOS'} items={products}/>
+          {!cargando ? 
+              <ItemList title={'LISTADO DE PRODUCTOS'} items={products}/>
+           :  <Stack sx={{ width: '100%', color: 'grey.500' }} spacing={2}>
+                  <LinearProgress color="secondary" />
+                  <LinearProgress color="success" />
+                  <LinearProgress color="inherit" />
+              </Stack>
+          }
       </div>
   )
 }
