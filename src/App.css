@@ -6,3 +6,8 @@
   width: 80px;
   height: 80px;
 }
+
+.form-contact{
+  display: flex;
+  flex-direction: column;
+}

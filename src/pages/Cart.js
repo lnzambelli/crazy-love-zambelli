@@ -84,6 +84,7 @@ const Cart = () => {
               <TableCell align="right">accion</TableCell>
             </TableRow>
           </TableHead>
+         
           <TableBody>
             {cardListItems.map((row) => (
               <TableRow
@@ -102,8 +103,9 @@ const Cart = () => {
               </TableRow>
             ))}
           </TableBody>
-
+         
         </Table>
+                { totalPrice>0 && 
                 <div>
                     <div >
                         <p>Total</p>
@@ -111,6 +113,7 @@ const Cart = () => {
                     </div>
                     <Button  onClick={() => setShowModal(true)}>Finalizar Compra</Button>
                 </div>
+                 }
       </TableContainer>
       <Modal title={success ? 'Compra exitosa' : 'Formulario de contacto'} open={showModal} handleClose={() => setShowModal(false)}>
             {success ? (
@@ -121,11 +124,12 @@ const Cart = () => {
                 </div>
             ) : (
                 <form className="form-contact" onSubmit={handleSubmit}>
-                    <TextField 
+                    <TextField
                         id="outlined-basic" 
                         name="name"
                         label="Nombre y Apellido" 
-                        variant="outlined" 
+                        variant="outlined"
+                        margin="normal" 
                         value={formValue.name}
                         onChange={handleChange}
                     />
@@ -133,16 +137,18 @@ const Cart = () => {
                         id="outlined-basic" 
                         name="phone"
                         label="Telefono" 
-                        variant="outlined" 
+                        variant="outlined"
+                        margin="normal" 
                         value={formValue.phone}
                         onChange={handleChange}
                     />
                     <TextField 
                         id="outlined-basic" 
                         name="email"
-                        label="Mail" 
+                        label="Email" 
                         value={formValue.email}
                         variant="outlined" 
+                        margin="normal"
                         onChange={handleChange}
                     />
                     <Button type="submit">Enviar </Button> 

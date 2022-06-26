@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 //Firestore
 import db from '../../utils/firebaseConfig';
 import { collection, getDocs, query, where } from "firebase/firestore";
+import './CardList.css'
 
 const CardList = ({title, catego}) => {
     const [products, setProducts] = useState([])
@@ -50,14 +51,14 @@ const CardList = ({title, catego}) => {
 
     return(
         <>
-        <h2 className='title-img-list'>{title}</h2>
+        <h2 className='titleCat'>{title}</h2>
         <Grid container spacing={2}>
-            {!catego ? (
+            {catego ? (
                 <Swiper
                     spaceBetween={20}
-                    slidesPerView={1}
+                    slidesPerView={4}
                     modules={[Pagination, Navigation]}
-                    navigation={true}            
+                    navigation={true}           
                 >
                     {
                         products.map( ({title, description, price, urlImg, id, quantity}) => {

@@ -1,0 +1,12 @@
+.contentNosotros{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.cardNosotros{
+    padding: 8px;
+}

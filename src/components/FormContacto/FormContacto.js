@@ -15,7 +15,7 @@ const FormContacto = () => {
         <div  className='informationContainer'>
             <article >
                 <EmailIcon />
-                <h5>lnzambelli@gmail.com</h5>
+                <h5>crazylove@gmail.com</h5>
             </article>
             <article>
                 <AddLocationIcon  />

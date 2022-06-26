@@ -14,7 +14,9 @@ const Carrousel = () => {
       <SwiperSlide>
         <img className='imgCarrousel' src='home1.jpg'/>
       </SwiperSlide>
-      <SwiperSlide><img className='imgCarrousel' src='home1.jpg'/></SwiperSlide>
+      <SwiperSlide>
+        <img className='imgCarrousel' src='home1.jpg'/>
+        </SwiperSlide>
     </Swiper>
   )
 }

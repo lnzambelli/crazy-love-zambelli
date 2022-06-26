@@ -51,8 +51,10 @@ const NavBar = () => {
                         }}
                     >
                         
-                        <MenuItem onClick={handleClose}><Link to="/productos/saphirus"  className='linkNavbar'>Saphirus  </Link></MenuItem>
-                        <MenuItem onClick={handleClose}><Link to="/productos/tulia"  className='linkNavbar'>Tulia  </Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to="/productos/saphirus"  className='linkNavbar'>Saphirus </Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to="/productos/milano"  className='linkNavbar'>Milano </Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to="/productos/ambar"  className='linkNavbar'>Ambar </Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to="/productos/cosmeticos"  className='linkNavbar'>Cosmeticos </Link></MenuItem>
                     </Menu>
                 </li>
                 <li>
