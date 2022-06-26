@@ -14,13 +14,21 @@ const CartProvider = ({children}) => {
             setCardListItems(cardListItems => [...cardListItems, product])
             setTotalPrice(totalPrice+(product.price*Number(product.quantity) ))
             setTotalQuantity(totalQuantity + Number(product.quantity))
+        }else{
+            cardListItems.map(prod => {
+                if (product.id === prod.id){
+                    prod.quantity = Number(prod.quantity)+ Number(product.quantity)
+                }
+            })
+            setTotalPrice(totalPrice+(product.price*Number(product.quantity) ))
+            setTotalQuantity(totalQuantity + Number(product.quantity))
         }
         
     }
 
     const deleteProduct = (product) => {
         setCardListItems(cardListItems.filter( cartProduct => cartProduct.id !== product.id))
-        setTotalPrice(totalPrice - product.price)
+        setTotalPrice(totalPrice - (Number(product.quantity)*product.price))
         setTotalQuantity(totalQuantity - product.quantity)
        
     }

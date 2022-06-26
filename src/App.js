@@ -1,7 +1,7 @@
 import './App.css';
 import  NavBar from './components/NavBar/NavBar'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-
+import Footer from './components/Footer/Footer'
 import Home from './pages/Home'
 import Contacto from './pages/Contacto'
 import Productos from './pages/Productos'
@@ -32,6 +32,7 @@ function App() {
                 <Route path='/cart' element={<Cart/>}></Route>
                 <Route path='*' element={<NotFound/>}></Route>
             </Routes>
+            <Footer/>
           </BrowserRouter>
         </ThemeProvider>
       </CartProvider>

@@ -1,13 +1,17 @@
 import React from 'react'
 import ItemListContainer from "./../components/ItemListContainer/ItemListContainer"
-import BannerPage from '../components/BannerPage/BannerPage'
-
+import Container from '@mui/material/Container';
+import Carrousel from './../components/Carrousel/Carrousel'
+import CardList from '../components/CardList/CardList';
 
 const Home = () => {
   return (
     <>
-      <BannerPage title="Mi Home" />
-      <ItemListContainer/>
+      <Container maxWidth="xl">
+        <Carrousel/>
+        <CardList title={"Linea Tulia"} catego={"tulia"}/>
+        <CardList title={"Linea Saphirus"} catego={"saphirus"}/>
+      </Container>
     </>
   )
 }

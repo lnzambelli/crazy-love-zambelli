@@ -57,6 +57,8 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   }));
 
 const SwitchTheme = () => {
+
+  const view = false;
   const { handleTheme } = useContext(ThemeContext)
   return (
     <FormGroup>
