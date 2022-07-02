@@ -53,8 +53,10 @@ const NavBar = () => {
                         
                         <MenuItem onClick={handleClose}><Link to="/productos/saphirus"  className='linkNavbar'>Saphirus </Link></MenuItem>
                         <MenuItem onClick={handleClose}><Link to="/productos/milano"  className='linkNavbar'>Milano </Link></MenuItem>
-                        <MenuItem onClick={handleClose}><Link to="/productos/ambar"  className='linkNavbar'>Ambar </Link></MenuItem>
-                        <MenuItem onClick={handleClose}><Link to="/productos/cosmeticos"  className='linkNavbar'>Cosmeticos </Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to="/productos/decoracion"  className='linkNavbar'>Decoración </Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to="/productos/sagrada"  className='linkNavbar'>Sagrada Madre </Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to="/productos/natural"  className='linkNavbar'>Línea Natural </Link></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to="/productos/velas"  className='linkNavbar'>Sahumos y velas </Link></MenuItem>
                     </Menu>
                 </li>
                 <li>
