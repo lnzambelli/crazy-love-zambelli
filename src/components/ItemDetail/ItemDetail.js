@@ -9,11 +9,11 @@ import {Link} from 'react-router-dom'
 import Button from '@mui/material/Button';
 import CartContext from '../../context/CartContext';
 import { useContext, useState } from "react";
+import Chip from '@mui/material/Chip';
 
 const ItemDetail = ({data}) => {
 
     const fragrance = ['Vainilla', 'Citrus',"Bebe"];
-    const size = ['250cc', '500cc',"750cc"];
     const [value, setValue] = useState(2);
     
     const [showButton, setShowButton] = useState(false);
@@ -32,11 +32,11 @@ const ItemDetail = ({data}) => {
                     <h1>{data.title}</h1>
                     <Rating name="simple-controlled" value={value} onChange={(event, newValue) => {setValue(newValue);}}/>
                     <h2>${data.price}</h2>
+                    <Chip label="solo por hoy" color="primary" className='chip' />
                     <Autocomplete disablePortal  options={fragrance}sx={{ width: 300 }} renderInput={(params) => <TextField {...params} label="Fragancia" />}/>
-                    <Autocomplete disablePortal  options={size}sx={{ width: 300 }} renderInput={(params) => <TextField {...params} label="Tamaño" />}/>
                     <p>{data.description}</p>
                     {!showButton ? 
-                    <ItemCount cantidad={cantidad} setCantidad={setCantidad} setShowButton={setShowButton}/>
+                    <ItemCount cantidad={cantidad} setCantidad={setCantidad} setShowButton={setShowButton} />
                     :
                     <Button disableRipple  variant='text' color='inherit'className='btnPage' onClick={()=>agregar()}
                     ><Link to="/cart">Finalizar Compra</Link></Button>

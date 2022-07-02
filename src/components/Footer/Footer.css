@@ -1,4 +1,17 @@
 .footer{
-    background: antiquewhite;
-    margin-top: 24px;
+    background: white;
+    margin-top: 65px;
+    border-top: 1px solid rgba(51,51,51,.1);
+}
+
+.btnPage{
+    text-decoration: none;
+    color: #151718;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+a{
+    color: #151718;
+    padding: 8px;
 }

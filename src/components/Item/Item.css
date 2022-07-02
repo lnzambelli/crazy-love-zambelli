@@ -16,6 +16,18 @@
     transform: translateY(-2px);
 }
 
+
 .contentCardItem{
     border-top: 1px solid rgba(51,51,51,.1);
+}
+
+.nombre{
+    text-transform: capitalize;
+    margin: 0 auto;
+}
+
+.detalle{
+    color: grey;
+    text-transform: capitalize;
+    margin: 4px auto;
 }

@@ -32,9 +32,9 @@ const FormContacto = () => {
             </article>
         </div>   
         <form className='formContainer' >
-                <TextField id="outlined-basic" label="Nombre" variant="outlined" className='formTextField' margin="normal"/>
-                <TextField id="outlined-basic" label="Correo" variant="outlined" className='formTextField'margin="normal"/>
-                <TextField id="outlined-multiline-static" label="Escriba aqui.." multiline rows={4} className='formTextField'margin="normal"/>
+                <TextField id="outlined-basic" label="Nombre" variant="outlined" className='formTextField' margin="normal" required/>
+                <TextField id="outlined-basic" label="Correo" variant="outlined" className='formTextField'margin="normal" required/>
+                <TextField id="outlined-multiline-static" label="Escriba aqui.." multiline rows={4} className='formTextField'margin="normal" required/>
                 <div>
                     <Button variant="contained">Enviar</Button>
                 </div>   

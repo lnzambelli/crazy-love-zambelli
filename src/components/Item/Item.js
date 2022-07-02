@@ -17,20 +17,20 @@ const Item = ({id,title,description, price, quantity, urlImg}) => {
 
     const auxUrl = "./img-not-found.png";
 
-    urlImg=='' ? urlImg=auxUrl : urlImg=urlImg 
+    urlImg === '' ? urlImg=auxUrl : urlImg=urlImg 
   
   return (
-    <Card sx={{maxWidth: 250 }} className="cardItem">
-        <Link to={`/producto/${id}`}>
+    <Card sx={{maxWidth: 200, height: 360 }} className="cardItem">
+        <Link to={`/producto/${id}`}  style={{ textDecoration: 'none'}}>
             <CardActionArea>
                 <CardMedia component="img" height="" image={urlImg} alt={title} className="imgCardItem" onError={e=>{e.target.src=auxUrl}}/>
                 <CardContent className='contentCardItem'>
-                <Typography gutterBottom variant="h5" component="div">
+                <h3 className='nombre'>
                     {title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
+                </h3>
+                <h6 className='detalle'>
                     {description} 
-                </Typography>
+                </h6>
                 </CardContent>
             </CardActionArea>
         </Link>

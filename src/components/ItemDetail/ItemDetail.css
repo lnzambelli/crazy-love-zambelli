@@ -2,14 +2,21 @@
     display: flex;
     width: 80%;
     margin: auto;
+    margin-top: 24px;
 }
 
 .imgDetail{
     width: 50%;
+    border: none;
 }
 
 .infoDetail{
     width: 50%;
     text-align: start;
+    box-shadow: none;
+}
+
+.chip{
+    margin-bottom: 16px;
 }
 

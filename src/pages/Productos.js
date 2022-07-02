@@ -38,8 +38,9 @@ const Productos = () => {
 
   return(
       <div className='general-container'>
-          {!cargando ? 
-              <ItemList title={'LISTADO DE PRODUCTOS'} items={products}/>
+          <h1 className="nombreCategoria">{category}</h1>
+          {!cargando ?
+              <ItemList title={`LISTADO DE PRODUCTOS`} items={products}/>
            :  <Stack sx={{ width: '100%', color: 'grey.500' }} spacing={2}>
                   <LinearProgress color="secondary" />
                   <LinearProgress color="success" />
