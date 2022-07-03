@@ -12,10 +12,10 @@ const Carrousel = () => {
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <img className='imgCarrousel' src='home1.jpg'/>
+        <img className='imgCarrousel' src='assets/home1.jpeg'/>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='imgCarrousel' src='home1.jpg'/>
+        <img className='imgCarrousel' src='assets/home2.jpeg'/>
         </SwiperSlide>
     </Swiper>
   )

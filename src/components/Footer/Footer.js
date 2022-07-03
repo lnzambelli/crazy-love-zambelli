@@ -16,9 +16,9 @@ const Footer = () => {
         </div>
 
         <div>
-            <a href={"https://facebook.com"} target={"_blank"}><FacebookIcon /></a>
-            <a href={"https://instagram.com"} target={"_blank"}><InstagramIcon /></a>
-            <a href={"https://whatsapp.com"} target={"_blank"}><WhatsAppIcon /></a>
+            <a href={"https://facebook.com"} target={"_blank"} className='iconFace'><FacebookIcon /></a>
+            <a href={"https://instagram.com"} target={"_blank"}  className='iconInst'><InstagramIcon /></a>
+            <a href={"https://whatsapp.com"} target={"_blank"}  className='iconWhat'><WhatsAppIcon /></a>
         </div>
     </footer>
   )

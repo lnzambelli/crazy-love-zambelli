@@ -8,6 +8,7 @@
     width: 100%;
     margin: 0 24px;
     border: 1px solid rgba(51,51,51,.1);
+    box-sizing: border-box;
 }
 .cardItem:hover{
     width: 100%;
@@ -15,7 +16,6 @@
     box-shadow: rgb(161, 163, 163) 0px 3px 8px;
     transform: translateY(-2px);
 }
-
 
 .contentCardItem{
     border-top: 1px solid rgba(51,51,51,.1);
@@ -30,4 +30,9 @@
     color: grey;
     text-transform: capitalize;
     margin: 4px auto;
+}
+
+.imgCardItem{
+    object-fit: contain;
+    transform: scale(0.8);
 }

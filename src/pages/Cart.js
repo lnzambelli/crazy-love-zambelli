@@ -115,12 +115,12 @@ const Cart = () => {
                 </div>
                  }
       </TableContainer>
-      <Modal title={success ? 'Compra exitosa' : 'Formulario de contacto'} open={showModal} handleClose={() => setShowModal(false)}>
+      <Modal title={success ? 'Compra exitosa' : 'Confirmar la compra:'} open={showModal} handleClose={() => setShowModal(false)}>
             {success ? (
                 <div>
                     La order se genero con exito!
                     Numero de orden: {success}
-                    <button onClick={finishOrder}>Aceptar</button>
+                    <Button onClick={finishOrder}>Aceptar</Button>
                 </div>
             ) : (
                 <form className="form-contact" onSubmit={handleSubmit}>

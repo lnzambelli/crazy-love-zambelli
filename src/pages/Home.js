@@ -10,8 +10,8 @@ import Nosotros from '../components/Nosotros/Nosotros';
 const Home = () => {
   return (
     <>
+      <Carrousel/>
       <Container maxWidth="xl">
-        <Carrousel/>
         <Nosotros/>
         <Box sx={{ width: '100%' }}>
           <h2 className='tituloNuestros'>Nuestros productos</h2>

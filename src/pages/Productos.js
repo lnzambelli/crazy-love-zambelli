@@ -33,7 +33,7 @@ const Productos = () => {
 } 
 
   const filterByCategory = (array) => {
-    setProducts(array.filter( item=> item.category == category))       
+    setProducts(array.filter( item=> item.category === category))       
   }
 
   return(
@@ -46,6 +46,10 @@ const Productos = () => {
                   <LinearProgress color="success" />
                   <LinearProgress color="inherit" />
               </Stack>
+          }
+
+          {
+            products.length === 0 && <img src='../assets/sinproducto.png' alt="no hay productos"></img>
           }
       </div>
   )

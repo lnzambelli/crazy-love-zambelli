@@ -26,5 +26,10 @@
 }
 
 .imgCat{
+  transform: scale(0.8);
   width: 100%;
+}
+.imgCat:hover{
+  transform: scale(1);
+  transition: 1s ease-out;
 }

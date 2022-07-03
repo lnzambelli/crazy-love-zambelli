@@ -20,20 +20,22 @@ const Item = ({id,title,description, price, quantity, urlImg}) => {
     urlImg === '' ? urlImg=auxUrl : urlImg=urlImg 
   
   return (
-    <Card sx={{maxWidth: 200, height: 360 }} className="cardItem">
-        <Link to={`/producto/${id}`}  style={{ textDecoration: 'none'}}>
+    <Card sx={{maxWidth: 250, height: 350 }} className="cardItem">
+       
             <CardActionArea>
-                <CardMedia component="img" height="" image={urlImg} alt={title} className="imgCardItem" onError={e=>{e.target.src=auxUrl}}/>
+                <Link to={`/producto/${id}`}  style={{ textDecoration: 'none'}}>
+                    <CardMedia component="img" height="200" image={urlImg} alt={title} className="imgCardItem" onError={e=>{e.target.src=auxUrl}}/>
+                </Link>
                 <CardContent className='contentCardItem'>
-                <h3 className='nombre'>
-                    {title}
-                </h3>
-                <h6 className='detalle'>
-                    {description} 
-                </h6>
+                    <h3 className='nombre'>
+                        {title}
+                    </h3>
+                    <h6 className='detalle'>
+                        {description} 
+                    </h6>
                 </CardContent>
             </CardActionArea>
-        </Link>
+        
         <CardActions  className='actionCardItem'>
             <Button className='btnCart' onClick={()=>addProductToCart({id,title,description, price, quantity, urlImg})} endIcon={<AddShoppingCartIcon />}>$ {price}</Button>
         </CardActions>

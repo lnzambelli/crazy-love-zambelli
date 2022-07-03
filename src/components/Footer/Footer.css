@@ -6,7 +6,7 @@
 
 .btnPage{
     text-decoration: none;
-    color: #151718;
+    color: #151718 !important;
     letter-spacing: 1px;
     font-size: 30px;
 }
@@ -14,4 +14,16 @@
 a{
     color: #151718;
     padding: 8px;
+}
+
+.iconFace:hover{
+    color: #3f51b5;
+}
+
+.iconInst:hover{
+    color: #f44336;
+}
+
+.iconWhat:hover{
+    color: #4caf50;
 }
