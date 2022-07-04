@@ -8,8 +8,6 @@ const Carrousel = () => {
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
         <img className='imgCarrousel' src='assets/home1.jpeg'/>

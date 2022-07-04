@@ -1,5 +1,4 @@
 import React from 'react'
-import BannerPage from '../components/BannerPage/BannerPage'
 import { Delete } from "@mui/icons-material"
 import CartContext from "../context/CartContext"
 import Table from '@mui/material/Table';
@@ -70,7 +69,7 @@ const Cart = () => {
   return (
     
     <>
-      <BannerPage title="Mi Cart" />
+       <h1 className="nombreCategoria">Mi Carrito</h1>
       <Container maxWidth="md">
       
       <TableContainer component={Paper}>

@@ -3,11 +3,8 @@ import './FormContacto.css'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import EmailIcon from '@mui/icons-material/Email';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import AddLocationIcon from '@mui/icons-material/AddLocation';
 import CallIcon from '@mui/icons-material/Call';
-import FacebookIcon from '@mui/icons-material/Facebook';
 
 const FormContacto = () => {
   return (
@@ -25,18 +22,13 @@ const FormContacto = () => {
                 <CallIcon/>
                 <h5>123456789</h5>
             </article>
-            <article className='socialContainer'>
-                <WhatsAppIcon/>
-                <InstagramIcon/>
-                <FacebookIcon/>
-            </article>
         </div>   
         <form className='formContainer' >
                 <TextField id="outlined-basic" label="Nombre" variant="outlined" className='formTextField' margin="normal" required/>
                 <TextField id="outlined-basic" label="Correo" variant="outlined" className='formTextField'margin="normal" required/>
                 <TextField id="outlined-multiline-static" label="Escriba aqui.." multiline rows={4} className='formTextField'margin="normal" required/>
                 <div>
-                    <Button variant="contained" color='secondary'>Enviar</Button>
+                    <Button variant="contained">Enviar</Button>
                 </div>   
         </form>
     </div>

@@ -37,7 +37,10 @@ const Item = ({id,title,description, price, quantity, urlImg}) => {
             </CardActionArea>
         
         <CardActions  className='actionCardItem'>
-            <Button className='btnCart' onClick={()=>addProductToCart({id,title,description, price, quantity, urlImg})} endIcon={<AddShoppingCartIcon />}>$ {price}</Button>
+            <Button className='btnCart' onClick={()=>addProductToCart({id,title,description, price, quantity, urlImg})} >
+                <span className='precio'>$ {price}</span>
+                <span className='add'>Añadir al carrito</span>
+            </Button>
         </CardActions>
     </Card>
   )

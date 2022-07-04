@@ -5,7 +5,6 @@ import Divider from '@mui/material/Divider';
 import './OrdenesList.css';
 
 const OrdenesList =  ({ordenes}) => {
-    console.log(ordenes)
   return (
     <Container className='containerOrder' sx={{ display: 'flex', justifyContent: 'space-between' }}>
         {

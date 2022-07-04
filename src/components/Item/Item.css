@@ -4,6 +4,30 @@
    color: black;
 }
 
+.add{
+   opacity: 0;
+   display: none;
+}
+
+.precio{
+    position: absolute;
+    transition: 2s;
+}
+
+.btnCart:hover .add{
+    opacity: 1;
+    position: absolute;
+    display: block;
+    transition: 2s step-start;
+
+}
+
+.btnCart:hover .precio{
+    opacity: 0;
+    display: none;
+}
+
+
 .cardItem{
     width: 100%;
     margin: 0 24px;
