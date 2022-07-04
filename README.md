@@ -21,7 +21,7 @@ Barra de navegacion que contiene:
 
 ### `Home`
 
-Carrousel con dos imagenes utilizando ==swiper.js==, card con servicios destacados, lista de categoria con redireccion a sus productos y carrousel de mas vendidos con  ==swiper.js==
+Carrousel con dos imagenes utilizando `swiper.js`, card con servicios destacados, lista de categoria con redireccion a sus productos y carrousel de mas vendidos con  `swiper.js`
 
 ### `Productos`
 
