@@ -10,11 +10,14 @@ const Carrousel = () => {
       slidesPerView={1}
     >
       <SwiperSlide>
-        <img className='imgCarrousel' src='assets/home1.jpeg'/>
+        <img className='imgCarrousel' src='assets/portadas/portada1.jpg'/>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='imgCarrousel' src='assets/home2.jpeg'/>
-        </SwiperSlide>
+        <img className='imgCarrousel' src='assets/portadas/portada2.jpg'/>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img className='imgCarrousel' src='assets/portadas/portada3.jpg'/>
+      </SwiperSlide>
     </Swiper>
   )
 }

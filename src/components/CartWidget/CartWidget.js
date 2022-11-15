@@ -89,7 +89,7 @@ const CartWidget = () => {
                                     <img className='cartImg' src={`${cartProduct.urlImg}`} /> 
                                 </div>
                                 <div className='cartInfo'>
-                                    <p>{cartProduct.quantity} {cartProduct.title}</p>
+                                    <p>{cartProduct.quantity} {cartProduct.title} {cartProduct.opcion}</p>
                                     <span className='cartPrice'>$ {cartProduct.price}</span>
                                 </div>
                                 <div className='' onClick={()=>deleteProduct(cartProduct)}>

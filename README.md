@@ -38,3 +38,16 @@ Formulario para envio de mensaje por medio de correo y lista de datos sobre la e
 ### `Carrito`
 
 Listado de productos confirmados con la intencion de comprar, donde se puede eliminar productos o finalizar la misma.
+
+ emailjs.send(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, newOrder, REACT_APP_PUBLIC_KEY)
+      .then((result) => {
+          setEstadoPedido(true)
+          setTimeout(() => {
+            clear()
+            finishOrder()
+          }, 2000);
+          console.log(result.text);
+      }, (error) => {
+          setMostrarError(true)
+          console.log(error.text);
+    });

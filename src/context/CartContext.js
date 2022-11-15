@@ -7,9 +7,10 @@ const CartProvider = ({children}) => {
     const [cardListItems, setCardListItems] = useState([])
     const [totalPrice, setTotalPrice] = useState(0)
     const [totalQuantity, setTotalQuantity] = useState(0)
+   
 
     const addProductToCart = (product) => {
-        let isInCart = cardListItems.find(cartProduct => cartProduct.id === product.id)
+        let isInCart = cardListItems.find(cartProduct => cartProduct.title+cartProduct.opcion === product.title+product.opcion)
         if(!isInCart) { 
             setCardListItems(cardListItems => [...cardListItems, product])
             setTotalPrice(totalPrice+(product.price*Number(product.quantity) ))
@@ -27,7 +28,7 @@ const CartProvider = ({children}) => {
     }
 
     const deleteProduct = (product) => {
-        setCardListItems(cardListItems.filter( cartProduct => cartProduct.id !== product.id))
+        setCardListItems(cardListItems.filter( cartProduct => cartProduct.title+cartProduct.opcion !== product.title+product.opcion))
         setTotalPrice(totalPrice - (Number(product.quantity)*product.price))
         setTotalQuantity(totalQuantity - product.quantity)
        

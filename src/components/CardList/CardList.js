@@ -12,18 +12,23 @@ import "swiper/css/navigation";
 //Firestore
 import db from '../../utils/firebaseConfig';
 import { collection, getDocs, query, where } from "firebase/firestore";
-import './CardList.css'
+import './CardList.css';
+//datos internos 
+import listItems from '../../utils/productsMock'
 
 const CardList = ({title, catego}) => {
     const [products, setProducts] = useState([])
 
     useEffect( () => {
         setProducts([])
+        obtenerLista()
+        /*
         console.log()
         getProducts()
         .then( (productos) => {
             catego ?  filterFirebase() : setProducts(productos)
         })
+        */
     }, [catego])
 
     const getProducts = async () => {
@@ -49,6 +54,11 @@ const CardList = ({title, catego}) => {
         return setProducts(productList)
     }
 
+    const obtenerLista = async () => {
+        const productList = listItems.filter(doc => doc.category === catego)
+        return setProducts(productList)
+    }
+
     return(
         <>
         <h2 className='titleCat'>{title}</h2>
@@ -61,7 +71,7 @@ const CardList = ({title, catego}) => {
                     navigation={true}           
                 >
                     {
-                        products.map( ({title, description, price, urlImg, id, quantity}) => {
+                        products.map( ({title, description, options, price, urlImg, urlImgFrag, id, quantity}) => {
                             return(
                                 <SwiperSlide key={id}>
                                     <Item 
@@ -69,6 +79,8 @@ const CardList = ({title, catego}) => {
                                         description={description} 
                                         price={price}
                                         urlImg={urlImg}
+                                        options={options}
+                                        urlImgFrag={urlImgFrag}
                                         quantity={quantity} 
                                         id={id}
                                     />

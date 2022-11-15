@@ -7,7 +7,7 @@ const Modal = ({handleClose, open, children, title}) => {
   return (
     <Dialog onClose={handleClose} open={open}>
             <DialogContent>
-                <DialogTitle>{title}</DialogTitle>
+                <DialogTitle style={{ textAlign: 'center'}}>{title}</DialogTitle>
                 {children}
             </DialogContent>
     </Dialog>
