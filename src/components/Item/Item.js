@@ -4,11 +4,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import CardMedia from '@mui/material/CardMedia';
-import IconButton from '@mui/material/IconButton';
 import CardActions from '@mui/material/CardActions';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import CartContext from '../../context/CartContext';
-import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
 

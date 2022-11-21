@@ -33,3 +33,23 @@
   transform: scale(1);
   transition: 1s ease-out;
 }
+
+@media screen and (max-width: 1200px) {
+  .nuevosProd{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .infoEmpresa{
+    display: none;
+  }
+  .imgPageCart{
+    display: none;
+  }
+}
+
+.contenidoTabla{
+  box-shadow: none;
+  margin-top: 2px;
+}

@@ -1,29 +1,13 @@
 .footer{
     background: white;
-    margin-top: 65px;
+    margin-top: 10px;
     border-top: 1px solid rgba(51,51,51,.1);
 }
 
-.btnPage{
-    text-decoration: none;
-    color: #151718 !important;
-    letter-spacing: 1px;
-    font-size: 30px;
-}
-
-a{
-    color: #151718;
-    padding: 8px;
-}
-
-.iconFace:hover{
-    color: #3f51b5;
-}
-
-.iconInst:hover{
-    color: #f44336;
-}
-
-.iconWhat:hover{
-    color: #4caf50;
+.footerTitulo{
+    display: block;
+    text-align: start;
+    padding: 4px;
+    font-size:x-small;
+    color: #0000008a;
 }

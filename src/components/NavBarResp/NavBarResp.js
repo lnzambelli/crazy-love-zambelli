@@ -16,23 +16,20 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import CartWidget from '../CartWidget/CartWidget';
 import {Link} from 'react-router-dom'
 import HomeIcon from '@mui/icons-material/Home';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import DryCleaningIcon from '@mui/icons-material/DryCleaning';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import FilterVintageIcon from '@mui/icons-material/FilterVintage';
 import CleanHandsIcon from '@mui/icons-material/CleanHands';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import LocalCafeIcon from '@mui/icons-material/LocalCafe';
-import OpacityIcon from '@mui/icons-material/Opacity';
 import OfflineBoltIcon from '@mui/icons-material/OfflineBolt';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import './NavBarResp.css';
 
 const drawerWidth = 240;
@@ -60,7 +57,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   padding: theme.spacing(0, 1),
   // necessary for content to be below app bar
   ...theme.mixins.toolbar,
-  justifyContent: 'space-between',
+  justifyContent: 'flex-end',
 }));
 
 export default function PersistentDrawerLeft() {
@@ -76,11 +73,11 @@ export default function PersistentDrawerLeft() {
   };
 
   return (
-    <Box sx={{ display: 'flex' }} style={{marginBottom: '64px'}}>
+    <Box sx={{ display: 'flex' }} style={{marginBottom: '58px'}}>
       <CssBaseline />
       <AppBar position="fixed" open={open} style={{backgroundColor: '#fff'}}>
         <Toolbar className='navbarContainer'>
-            <div>
+            <div className='menuLogo'>
           <IconButton
             aria-label="open drawer"
             onClick={handleDrawerOpen}
@@ -89,8 +86,11 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-            <Link to="/home" className='logo'>
-                <a>CRAZY LOVE</a>
+          
+            <Link to="/home" className='nombre'>
+              <Typography variant="h5" component="div" sx={{ flexGrow: 1 }} className='titulo'>
+              Crazy Love
+            </Typography>
             </Link>
             </div>
             <CartWidget />
@@ -140,7 +140,7 @@ export default function PersistentDrawerLeft() {
                 <ListItem disablePadding>
                     <ListItemButton>
                     <ListItemIcon>
-                        <FavoriteIcon />
+                        <SelfImprovementIcon />
                     </ListItemIcon>
                     <ListItemText primary="Decoración" />
                     </ListItemButton>
@@ -150,7 +150,7 @@ export default function PersistentDrawerLeft() {
                 <ListItem disablePadding>
                     <ListItemButton>
                     <ListItemIcon>
-                        <SelfImprovementIcon />
+                        <LocalFireDepartmentIcon />
                     </ListItemIcon>
                     <ListItemText primary="Sagrada Madre" />
                     </ListItemButton>
@@ -180,7 +180,7 @@ export default function PersistentDrawerLeft() {
                 <ListItem disablePadding>
                     <ListItemButton>
                     <ListItemIcon>
-                        <LocalFireDepartmentIcon />
+                        <DryCleaningIcon />
                     </ListItemIcon>
                     <ListItemText primary="Remeras" />
                     </ListItemButton>
@@ -209,6 +209,7 @@ export default function PersistentDrawerLeft() {
                 </ListItemButton>
             </ListItem>
             </Link>
+            <a href="https://www.instagram.com/vircrazylove/"  className='linkNavbar' target={"_blank"}> 
             <ListItem disablePadding>
                 <ListItemButton>
                 <ListItemIcon>
@@ -217,6 +218,17 @@ export default function PersistentDrawerLeft() {
                 <ListItemText primary="Instagram" />
                 </ListItemButton>
             </ListItem>
+            </a>
+            <a href=" https://wa.me/3492213095"  className='linkNavbar' target={"_blank"}> 
+            <ListItem disablePadding>
+                <ListItemButton>
+                <ListItemIcon>
+                    <WhatsAppIcon />
+                </ListItemIcon>
+                <ListItemText primary="WhatsApp" />
+                </ListItemButton>
+            </ListItem>
+            </a>
         </List>
       </Drawer>
     </Box>

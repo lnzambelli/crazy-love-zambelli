@@ -9,9 +9,6 @@ import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-//Firestore
-import db from '../../utils/firebaseConfig';
-import { collection, getDocs, query, where } from "firebase/firestore";
 import './CardList.css';
 //datos internos 
 import listItems from '../../utils/productsMock'
@@ -22,37 +19,7 @@ const CardList = ({title, catego}) => {
     useEffect( () => {
         setProducts([])
         obtenerLista()
-        /*
-        console.log()
-        getProducts()
-        .then( (productos) => {
-            catego ?  filterFirebase() : setProducts(productos)
-        })
-        */
     }, [catego])
-
-    const getProducts = async () => {
-        const productCollection = collection(db, "products")
-        const productSnapshot = await getDocs(productCollection);
-        const productList = productSnapshot.docs.map((doc) => {
-            let product = doc.data()
-            product.id = doc.id
-            return product
-        })
-        return productList
-    }
-
-    const filterFirebase = async () => {
-        const productRef = collection(db, 'products')
-        const queryResult = query(productRef, where("category", "==", catego));
-        const querySnapshot = await getDocs(queryResult);
-        const productList = querySnapshot.docs.map((doc) => {
-            let product = doc.data()
-            product.id = doc.id
-            return product
-        })
-        return setProducts(productList)
-    }
 
     const obtenerLista = async () => {
         const productList = listItems.filter(doc => doc.category === catego)

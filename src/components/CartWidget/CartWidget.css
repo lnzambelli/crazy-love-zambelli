@@ -1,7 +1,3 @@
-.cartButton{
-    color: #151718
-}
-
 .cartButton:hover{
     font-weight: 600;
 }
@@ -30,12 +26,9 @@
     text-align: center;
 }
 
-.cartBtnInit{
+.mensajeCarrito{
+   padding: 2px 4px;
 
-}
-
-.cartBtnClear{
-    
 }
 
 .cartBtnIrCompra{

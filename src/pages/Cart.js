@@ -14,11 +14,11 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Modal from '../components/Modal/Modal'
 import TextField from '@mui/material/TextField';
-import { addDoc, collection } from 'firebase/firestore'
-import db from "../utils/firebaseConfig"
+import Chip from '@mui/material/Chip';
 import emailjs from '@emailjs/browser'
-import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import MyAlert from '../components/MyAlert/MyAlert';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
 
 const Cart = () => {
 
@@ -39,7 +39,6 @@ const Cart = () => {
       } ),
       total: totalPrice
   })
-  const [success, setSuccess] = useState()
   const navigate = useNavigate()
 
 
@@ -68,33 +67,31 @@ const Cart = () => {
           setMostrarError(true)
           console.log(error.text);
     });
-    
-    
-      /*
-      const orderFirebase = collection(db, 'ordenes')
-      const orderDoc = await addDoc(orderFirebase, newOrder)
-      console.log("orden generada: ", orderDoc.id)
-      setSuccess(orderDoc.id)
-      clear()
-      */
   }
 
 
   return (
     
     <>
-       <h1 className="nombreCategoria">Mi Carrito</h1>
-      <Container maxWidth="md">
+      <Card width="100%">
+            <CardMedia
+              component="img"
+              height="250"
+              image={`/assets/portadas/miCarrito.jpg`}
+              alt="productos"
+            />
+      </Card>
+      <Container>
       
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <TableContainer component={Paper} className="contenidoTabla">
+        <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell></TableCell>
+              <TableCell className='columnaImgCart'></TableCell>
               <TableCell align="right">cantidad</TableCell>
               <TableCell align="right">titulo</TableCell>
               <TableCell align="right">precio</TableCell>
-              <TableCell align="right">accion</TableCell>
+              <TableCell align="right"></TableCell>
             </TableRow>
           </TableHead>
          
@@ -104,7 +101,7 @@ const Cart = () => {
                 key={row.id}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
-                <TableCell>
+                <TableCell >
                     <img className='imgPageCart' src={`${row.urlImg}`} />
                 </TableCell>
                 <TableCell align="right">{row.quantity}</TableCell>
@@ -121,8 +118,7 @@ const Cart = () => {
                 { totalPrice>0 && 
                 <div>
                     <div >
-                        <p>Total</p>
-                        <span>$ {totalPrice}</span>
+                      <Chip label={`TOTAL $${totalPrice}`} color="primary" style={{fontSize: '1rem'}}/>
                     </div>
                     <Button  onClick={() => setShowModal(true)}>Finalizar Compra</Button>
                 </div>
@@ -131,9 +127,14 @@ const Cart = () => {
       <Modal title={estadoPedido ? 'Pedido confirmado' : 'Confirmar la compra:'} open={showModal} handleClose={() => setShowModal(false)}>
             {estadoPedido ? (
                 <div>
-                    <TaskAltIcon style={{ textAlign: 'center'}} color="primary" fontSize="large"/>
-                    <h4 style={{ textAlign: 'center'}}> La orden se genero con exito!</h4>
-                    <h5 style={{ textAlign: 'center'}}>Muchas gracias por su compra</h5>
+                    <Card width="100%">
+                          <CardMedia
+                            component="img"
+                            height="300"
+                            image={`/assets/portadas/compraConfirmada.jpg`}
+                            alt="compra"
+                          />
+                    </Card>
                     <Button onClick={finishOrder} style={{ width: '100%'}}>Aceptar</Button>
                 </div>
             ) : (
@@ -150,6 +151,7 @@ const Cart = () => {
                     <TextField 
                         id="outlined-basic" 
                         name="phone"
+                        type="number"
                         label="Telefono" 
                         variant="outlined"
                         margin="normal" 
@@ -159,13 +161,13 @@ const Cart = () => {
                     <TextField 
                         id="outlined-basic" 
                         name="email"
-                        label="Email" 
+                        label="Comentario" 
                         value={formValue.email}
                         variant="outlined" 
                         margin="normal"
                         onChange={handleChange}
                     />
-                    <Button type="submit" disabled={estadoPedido}>Enviar </Button> 
+                    <Button type="submit" disabled={estadoPedido || formValue.phone.length<6 || formValue.name.length<6} >Enviar </Button> 
                 </form>
             )}
             {

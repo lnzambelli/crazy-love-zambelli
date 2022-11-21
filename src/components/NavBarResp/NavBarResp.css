@@ -5,11 +5,18 @@
     background-color: #fff;
 }
 
-.logo{
-    color: #151718;
+.nombre{
+    color: #0000008a;
     cursor: pointer;
-    font-size: 24px;
     text-decoration: none;
     letter-spacing: 0.5px;
-    padding-left: 12px;
+}
+
+.titulo:hover{
+    font-weight: 600;
+}
+
+.menuLogo{
+   display: flex;
+   align-items: center;
 }

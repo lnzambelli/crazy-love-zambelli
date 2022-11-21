@@ -6,10 +6,6 @@ import Stack from '@mui/material/Stack';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 
-//firestore
-import {collection, getDocs} from 'firebase/firestore'
-import db from '../utils/firebaseConfig'
-
 //datos internos 
 import listItems from '../utils/productsMock'
 
@@ -20,29 +16,8 @@ const Productos = () => {
 
   useEffect( () => {
     obtenerLista()
-    /*
-    getProducts().then((prod)=>{  
-        filterByCategory(prod)
-    })
-    */
   }, [category])
   
-  const getProducts = async () =>{
-    setCargando(true)
-    const productSnapshot = await getDocs(collection(db,"products"));
-    
-    const productList = productSnapshot.docs.map((doc)=>{
-        let product = doc.data()
-        product.id = doc.id
-        return product
-    })
-    setCargando(false)
-    return productList
-} 
-
-  const filterByCategory = (array) => {
-    setProducts(array.filter( item=> item.category === category))       
-  }
 
   const obtenerLista = async () => {
     const productList = listItems.filter(doc => doc.category === category)

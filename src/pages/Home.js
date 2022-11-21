@@ -4,17 +4,17 @@ import Carrousel from './../components/Carrousel/Carrousel'
 import CardList from '../components/CardList/CardList';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Fab from '@mui/material/Fab';
 import {Link} from 'react-router-dom'
 import Nosotros from '../components/Nosotros/Nosotros';
-import Grid2 from '@mui/material/Unstable_Grid2';
 
 const Home = () => {
   return (
     <>
       <Carrousel/>
       <Container maxWidth="xl">
-        <Nosotros/>
+        <div className='infoEmpresa'>
+          <Nosotros/>
+        </div>
         <Box sx={{ width: '100%' }}>
           <h2 className='tituloNuestros'>Nuestros productos</h2>
           <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
@@ -60,7 +60,9 @@ const Home = () => {
             </Grid>
           </Grid>
         </Box>
-        <CardList title={"Nuevos Productos"} catego={"mates"}/>
+        <div className="nuevosProd">
+          <CardList title={"Nuevos Productos"} catego={"mates"} />
+        </div>
       </Container>
     </>
   )

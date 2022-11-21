@@ -77,7 +77,7 @@ const CartWidget = () => {
                 <Divider />
                     {cardListItems.length === 0 && (
                         <>
-                            <p>No hay productos agregados al carrito</p>
+                            <p className='mensajeCarrito'>No hay productos agregados</p>
                             <Button className="cartBtnIrCompra"><Link  to="/productos/saphirus" >Ir a comprar!</Link></Button>
                         </>
                     )}
