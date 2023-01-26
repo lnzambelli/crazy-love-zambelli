@@ -6,16 +6,27 @@ import Home from './pages/Home'
 import Productos from './pages/Productos'
 import Cart from './pages/Cart'
 import NotFound from './pages/NotFound'
-import { ThemeProvider } from './context/ThemeContext';
 import { CartProvider } from './context/CartContext';
 import Footer from './components/Footer/Footer';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function App() {
+
+  const outerTheme = createTheme({
+    palette: {
+      primary: {
+        main: '#f73378',
+      },
+      secondary: {
+        main: '#af52bf',
+      },
+    },
+  });
 
   return (
     <div className="App">
       <CartProvider>
-        <ThemeProvider>
+        <ThemeProvider theme={outerTheme}>
           <BrowserRouter>
             <NavBarResp/>
             <Routes>

@@ -35,7 +35,11 @@ const CardList = ({title, catego}) => {
                     spaceBetween={20}
                     slidesPerView={4}
                     modules={[Pagination, Navigation]}
-                    navigation={true}           
+                    navigation={true}
+                    style={{
+                        "--swiper-navigation-color": "#f73378",
+                        "--swiper-pagination-color": "#fff",
+                      }}           
                 >
                     {
                         products.map( ({title, description, options, price, urlImg, urlImgFrag, id, quantity}) => {
