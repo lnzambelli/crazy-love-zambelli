@@ -20,6 +20,13 @@
 .cartContent{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
+
+.desCart{
+    display: flex;
+    justify-content:start;
+    width: 100%;
 }
 
 .cartTitle{
@@ -38,4 +45,8 @@
 .btnContainer{
     display: flex;
     justify-content: center;
+}
+
+.btnDelete:hover{
+   color: #f73378;
 }

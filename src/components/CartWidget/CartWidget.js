@@ -85,14 +85,17 @@ const CartWidget = () => {
                     {cardListItems.map( (cartProduct) => {
                         return(
                             <MenuItem className='cartContent' key={cartProduct.id}>
-                                <div >
-                                    <img className='cartImg' src={`${cartProduct.urlImg}`} /> 
+                                <div className='desCart'>
+                                    <div >
+                                        <img className='cartImg' src={`${cartProduct.urlImg}`} /> 
+                                    </div>
+                                    <div className='cartInfo'>
+                                        <p>{cartProduct.quantity} {cartProduct.title} {cartProduct.opcion}</p>
+                                        <span className='cartPrice'>$ {cartProduct.price}</span>
+                                    </div>
                                 </div>
-                                <div className='cartInfo'>
-                                    <p>{cartProduct.quantity} {cartProduct.title} {cartProduct.opcion}</p>
-                                    <span className='cartPrice'>$ {cartProduct.price}</span>
-                                </div>
-                                <div className='' onClick={()=>deleteProduct(cartProduct)}>
+                                
+                                <div className='btnDelete' onClick={()=>deleteProduct(cartProduct)}>
                                     <DeleteIcon  />
                                 </div>
                             </MenuItem>

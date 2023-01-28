@@ -37,7 +37,6 @@ function App() {
                 <Route path='/cart' element={<Cart/>}></Route>
                 <Route path='*' element={<NotFound/>}></Route>
             </Routes>
-            <Footer/>
           </BrowserRouter>
         </ThemeProvider>
       </CartProvider>

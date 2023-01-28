@@ -225,7 +225,7 @@ export default function PersistentDrawerLeft() {
                 <ListItemIcon>
                     <WhatsAppIcon />
                 </ListItemIcon>
-                <ListItemText primary="WhatsApp" />
+                <ListItemText primary="Whatsapp" />
                 </ListItemButton>
             </ListItem>
             </a>

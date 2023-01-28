@@ -89,7 +89,7 @@ const Cart = () => {
             <TableRow>
               <TableCell className='columnaImgCart'></TableCell>
               <TableCell align="right">cantidad</TableCell>
-              <TableCell align="right">titulo</TableCell>
+              <TableCell align="right">título</TableCell>
               <TableCell align="right">precio</TableCell>
               <TableCell align="right"></TableCell>
             </TableRow>
@@ -152,7 +152,7 @@ const Cart = () => {
                         id="outlined-basic" 
                         name="phone"
                         type="number"
-                        label="Telefono" 
+                        label="Teléfono" 
                         variant="outlined"
                         margin="normal" 
                         value={formValue.phone}
@@ -172,7 +172,7 @@ const Cart = () => {
             )}
             {
               mostrarError && (
-                <MyAlert type="error" text="No se pudo enviar el pedido, intente mas tarde"></MyAlert>
+                <MyAlert type="error" text="No se pudo enviar el pedido, intente más tarde"></MyAlert>
               )
             }
         </Modal>
