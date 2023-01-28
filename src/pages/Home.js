@@ -16,7 +16,7 @@ const Home = () => {
           <Nosotros/>
         </div>
         <Box sx={{ width: '100%' }}>
-          <h2 className='tituloNuestros'>Nuestros productos</h2>
+          <h2 className='tituloNuestros'>Nuestros Productos</h2>
           <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
             <Grid item xs={6} md={3}>
                 <Link to="/productos/saphirus">

@@ -115,7 +115,7 @@ export default function PersistentDrawerLeft() {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
+        <List onClick={handleDrawerClose}>
             <Link to="/productos/saphirus"  className='linkNavbar'>
                 <ListItem disablePadding>
                     <ListItemButton>

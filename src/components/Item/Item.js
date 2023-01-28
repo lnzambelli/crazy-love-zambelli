@@ -14,6 +14,7 @@ const Item = ({id,title,description, options,price, quantity, urlImg, urlImgFrag
     
     const {addProductToCart} = useContext(CartContext)
     const auxUrl = "./img-not-found.png";
+
     urlImg === '' ? urlImg=auxUrl : urlImg=urlImg
 
     const [opcion, setOpcion] = useState('')
@@ -42,7 +43,7 @@ const Item = ({id,title,description, options,price, quantity, urlImg, urlImgFrag
                                 <option value={''}>Elegir opción</option>
                             {
                                 
-                                options.map(opcion => <option key={opcion.value} value={opcion.value}>{opcion}</option>)
+                                options.sort().map(opcion => <option key={opcion.value} value={opcion.value}>{opcion}</option>)
                             }     
                             
                             </NativeSelect>
