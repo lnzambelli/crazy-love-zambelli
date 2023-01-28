@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <footer className='footer'> 
-        <span className='footerTitulo'>Crazy Love 2022</span>
+        <span ></span>
     </footer>
   )
 }
