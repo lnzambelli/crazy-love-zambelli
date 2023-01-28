@@ -290,7 +290,7 @@ const listItems = [
     },
     {
         id: 26,
-        title : 'Sahumerios Variados x 20',
+        title : 'Sahumerios x 20',
         description : "",
         options: [],
         price : 300,
@@ -754,7 +754,7 @@ const listItems = [
     },
     {
         id: 61,
-        title : 'Carbón Defumador x Unidad',
+        title : 'Carbón Defumador',
         description : "",
         options: [],
         price : 40,

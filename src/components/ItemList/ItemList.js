@@ -12,7 +12,7 @@ const ItemList = ({title, items}) => {
             items.map( ({id,title,description, options,price,quantity, urlImg, urlImgFrag}) => {
 
                 return(
-                    <Grid item md={3} key={id} className="itemsContainer">
+                    <Grid item md={4} lg={3} xl={3} key={id} className="itemsContainer">
                         <Item id={id} title={title} description={description} price={price} urlImg={urlImg} quantity={quantity}  options={options} urlImgFrag={urlImgFrag}></Item>
                     </Grid>
                 )
