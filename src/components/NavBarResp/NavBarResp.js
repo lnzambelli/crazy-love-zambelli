@@ -89,7 +89,7 @@ export default function PersistentDrawerLeft() {
           
             <Link to="/home" className='nombre'>
               <Typography variant="h5" component="div" sx={{ flexGrow: 1 }} className='titulo'>
-              Crazy Love
+                {open ? "": "Crazy Love"}
             </Typography>
             </Link>
             </div>
@@ -110,6 +110,11 @@ export default function PersistentDrawerLeft() {
         open={open}
       >
         <DrawerHeader>
+            <Link to="/home" className='nombre'>
+              <Typography variant="h5" component="div" sx={{ flexGrow: 1 }} className='titulo'>
+                {!open ? "": "Crazy Love"}
+            </Typography>
+            </Link>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>

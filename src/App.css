@@ -53,3 +53,11 @@
   box-shadow: none;
   margin-top: 2px;
 }
+
+
+@media screen and (max-width: 480px) {
+  .containerPpal{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+}

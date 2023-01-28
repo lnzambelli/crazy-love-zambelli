@@ -50,3 +50,17 @@
 .btnDelete:hover{
    color: #f73378;
 }
+
+@media screen and (max-width: 480px) {
+    .cartImg{
+        display: none;
+    }
+
+    .cartInfo{
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+        margin-left: 8px;
+        font-size: 0.8rem;
+    }
+}

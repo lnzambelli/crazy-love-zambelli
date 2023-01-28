@@ -81,8 +81,9 @@ const Cart = () => {
               alt="productos"
             />
       </Card>
-      <Container>
+      <Container className='containerPpal'>
       
+      {cardListItems.length== 0 ? navigate('/') : 
       <TableContainer component={Paper} className="contenidoTabla">
         <Table aria-label="simple table">
           <TableHead>
@@ -124,6 +125,7 @@ const Cart = () => {
                 </div>
                  }
       </TableContainer>
+      }
       <Modal title={estadoPedido ? 'Pedido confirmado' : 'Confirmar la compra:'} open={showModal} handleClose={() => setShowModal(false)}>
             {estadoPedido ? (
                 <div>
