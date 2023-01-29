@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './Carrousel.css';
 import portada1 from './../../imagenes/assets/PORTADAS/portada1.jpg';
-import portada2 from './../../imagenes/assets/PORTADAS/portada1.jpg';
-import portada3 from './../../imagenes/assets/PORTADAS/portada1.jpg';
+import portada2 from './../../imagenes/assets/PORTADAS/portada2.jpg';
+import portada3 from './../../imagenes/assets/PORTADAS/portada3.jpg';
 
 const Carrousel = () => {
   return (
