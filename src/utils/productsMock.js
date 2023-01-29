@@ -8,7 +8,7 @@ const listItems = [
         price : 2400,
         category:"mates",
         quantity: 1,
-        urlImg: '/assets/productos/mates/automate.jpg',
+        urlImg: 'automate',
         urlImgFrag: '',
     },
     {
@@ -24,7 +24,7 @@ const listItems = [
         price : 2900,
         category:"mates",
         quantity: 1,
-        urlImg: '/assets/productos/mates/matepampa.jpg',
+        urlImg: 'matepampa',
         urlImgFrag: '',
     },
     {
@@ -35,7 +35,7 @@ const listItems = [
         price : 2350,
         category:"mates",
         quantity: 1,
-        urlImg: '/assets/productos/mates/maderate.jpg',
+        urlImg: 'maderate',
         urlImgFrag: '',
     },
     {
@@ -46,7 +46,7 @@ const listItems = [
         price : 1500,
         category:"mates",
         quantity: 1,
-        urlImg: '/assets/productos/mates/matermico.jpg',
+        urlImg: 'matermico',
         urlImgFrag: '',
     },
     {
@@ -57,7 +57,7 @@ const listItems = [
         price : 1100,
         category:"mates",
         quantity: 1,
-        urlImg: '/assets/productos/mates/mateava.jpg',
+        urlImg: 'mateava',
         urlImgFrag: '',
     },
     {
@@ -68,7 +68,7 @@ const listItems = [
         price : 950,
         category:"mates",
         quantity: 1,
-        urlImg: '/assets/productos/mates/matedeco.jpg',
+        urlImg: 'matedeco',
         urlImgFrag: '',
     },
     
@@ -171,7 +171,7 @@ const listItems = [
         price : 2400,
         category:"decoracion",
         quantity: 1,
-        urlImg: '/assets/productos/deco/budhasmed.jpg',
+        urlImg: 'budhasmed',
         urlImgFrag: '',
     },
     {
@@ -182,7 +182,7 @@ const listItems = [
         price : 1100,
         category:"decoracion",
         quantity: 1,
-        urlImg: '/assets/productos/deco/budhasmini.jpg',
+        urlImg: 'budhasmini',
         urlImgFrag: '',
     },
     {
@@ -193,7 +193,7 @@ const listItems = [
         price : 900,
         category:"decoracion",
         quantity: 1,
-        urlImg: '/assets/productos/deco/cascada.jpg',
+        urlImg: 'cascada',
         urlImgFrag: '',
     },
     {
@@ -204,7 +204,7 @@ const listItems = [
         price : 1450,
         category:"decoracion",
         quantity: 1,
-        urlImg: '/assets/productos/deco/hornocoraz.jpg',
+        urlImg: 'hornocoraz',
         urlImgFrag: '',
     },
     {
@@ -215,7 +215,7 @@ const listItems = [
         price : 1280,
         category:"decoracion",
         quantity: 1,
-        urlImg: '/assets/productos/deco/hornoelef.jpg',
+        urlImg: 'hornoelef',
         urlImgFrag: '',
     },
     {
@@ -226,7 +226,7 @@ const listItems = [
         price : 800,
         category:"decoracion",
         quantity: 1,
-        urlImg: '/assets/productos/deco/hornohindu.jpg',
+        urlImg: 'hornohindu',
         urlImgFrag: '',
     },
     {
@@ -237,7 +237,7 @@ const listItems = [
         price : 800,
         category:"decoracion",
         quantity: 1,
-        urlImg: '/assets/productos/deco/hornopetalos.jpg',
+        urlImg: 'hornopetalos',
         urlImgFrag: '',
     },
     {
@@ -248,7 +248,7 @@ const listItems = [
         price : 860,
         category:"decoracion",
         quantity: 1,
-        urlImg: '/assets/productos/deco/hornorombo.jpg',
+        urlImg: 'hornorombo',
         urlImgFrag: '',
     },
     {
@@ -259,7 +259,7 @@ const listItems = [
         price : 4800,
         category:"decoracion",
         quantity: 1,
-        urlImg: '/assets/productos/deco/lampbudha.jpg',
+        urlImg: 'lampbudha',
         urlImgFrag: '',
     },
     {
@@ -270,7 +270,7 @@ const listItems = [
         price : 4800,
         category:"decoracion",
         quantity: 1,
-        urlImg: '/assets/productos/deco/lampfenshui.jpg',
+        urlImg: 'lampfenshui',
         urlImgFrag: '',
     },
 

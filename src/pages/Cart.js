@@ -20,6 +20,9 @@ import MyAlert from '../components/MyAlert/MyAlert';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 
+import miCarrito from './../imagenes/assets/PORTADAS/miCarrito.jpg';
+import compraConfirmada from './../imagenes/assets/PORTADAS/compraConfirmada.jpg'
+
 const Cart = () => {
 
   const { cardListItems, deleteProduct, clear,totalPrice  } = useContext(CartContext)
@@ -77,7 +80,7 @@ const Cart = () => {
             <CardMedia
               component="img"
               height="250"
-              image={`/assets/portadas/miCarrito.jpg`}
+              image={miCarrito}
               alt="productos"
             />
       </Card>
@@ -95,7 +98,6 @@ const Cart = () => {
               <TableCell align="right"></TableCell>
             </TableRow>
           </TableHead>
-         
           <TableBody>
             {cardListItems.map((row) => (
               <TableRow
@@ -133,7 +135,7 @@ const Cart = () => {
                           <CardMedia
                             component="img"
                             height="300"
-                            image={`/assets/portadas/compraConfirmada.jpg`}
+                            image={compraConfirmada}
                             alt="compra"
                           />
                     </Card>

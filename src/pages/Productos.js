@@ -9,10 +9,21 @@ import CardMedia from '@mui/material/CardMedia';
 //datos internos 
 import listItems from '../utils/productsMock'
 
+import saphirus from './../imagenes/assets/PORTADAS/saphirus.jpg'
+import milano from './../imagenes/assets/PORTADAS/milano.jpg'
+import mates from './../imagenes/assets/PORTADAS/mates.jpg'
+import regalos from './../imagenes/assets/PORTADAS/regalos.jpg'
+import sagrada from './../imagenes/assets/PORTADAS/sagrada.jpg'
+import decoracion from './../imagenes/assets/PORTADAS/decoracion.jpg'
+import iluminarte from './../imagenes/assets/PORTADAS/iluminarte.jpg'
+import remeras from './../imagenes/assets/PORTADAS/remeras.jpg'
+import sinproducto from './../imagenes/assets/sinproducto.png'
+
 const Productos = () => {
   const [products, setProducts] = useState([])
   const { category } = useParams()
   const [cargando, setCargando] = useState(false)
+  const [urlCategory, setUrlCategory] = useState('')
 
   useEffect( () => {
     obtenerLista()
@@ -21,8 +32,12 @@ const Productos = () => {
 
   const obtenerLista = async () => {
     const productList = listItems.filter(doc => doc.category === category)
+    const arrPortadas = [saphirus, milano, mates, regalos, sagrada, decoracion, , iluminarte, remeras ];
+    setUrlCategory(arrPortadas.find(cat => cat.includes(category)))
     return setProducts(productList)
-}
+  }
+
+  
 
   return(
       <div className='general-container'>
@@ -30,7 +45,7 @@ const Productos = () => {
             <CardMedia
               component="img"
               height="250"
-              image={`/assets/portadas/${category}.jpg`}
+              image={urlCategory}
               alt="productos"
             />
             </Card>
@@ -44,7 +59,7 @@ const Productos = () => {
           }
 
           {
-            products.length === 0 && <img src='../assets/sinproducto.png' alt="no hay productos"></img>
+            products.length === 0 && <img src={sinproducto} alt="no hay productos"></img>
           }
       </div>
   )

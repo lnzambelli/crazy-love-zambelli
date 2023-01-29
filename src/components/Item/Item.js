@@ -10,12 +10,16 @@ import CartContext from '../../context/CartContext';
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
 
+import listProd from './listProd';
+
 const Item = ({id,title,description, options,price, quantity, urlImg, urlImgFrag}) => {
     
     const {addProductToCart} = useContext(CartContext)
     const auxUrl = "./img-not-found.png";
 
-    urlImg === '' ? urlImg=auxUrl : urlImg=urlImg
+    urlImg === '' ? urlImg=auxUrl : urlImg=listProd.find(prod => prod.includes(urlImg));
+
+    
 
     const [opcion, setOpcion] = useState('')
 
