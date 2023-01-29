@@ -16,7 +16,89 @@ import hornorombo from './../../imagenes/assets/PRODUCTOS/DECO/hornorombo.jpg'
 import lampbudha from './../../imagenes/assets/PRODUCTOS/DECO/lampbudha.jpg'
 import lampfenshui from './../../imagenes/assets/PRODUCTOS/DECO/lampfenshui.jpg'
 
+import conos from './../../imagenes/assets/PRODUCTOS/ILUMINARTE/conos.jpg'
+import sahum from './../../imagenes/assets/PRODUCTOS/ILUMINARTE/sahum.jpg'
+import velamandala from './../../imagenes/assets/PRODUCTOS/ILUMINARTE/velamandala.jpg'
+import velasblancas from './../../imagenes/assets/PRODUCTOS/ILUMINARTE/velasblancas.jpg'
+import velascolor from './../../imagenes/assets/PRODUCTOS/ILUMINARTE/velascolor.jpg'
+import velasoja from './../../imagenes/assets/PRODUCTOS/ILUMINARTE/velasoja.jpg'
+import velitasarom from './../../imagenes/assets/PRODUCTOS/ILUMINARTE/velitasarom.jpg'
+import velitasoja from './../../imagenes/assets/PRODUCTOS/ILUMINARTE/velitasoja.jpg'
+import veloncitos from './../../imagenes/assets/PRODUCTOS/ILUMINARTE/veloncitos.jpg'
+
+import aguamic from './../../imagenes/assets/PRODUCTOS/MILANO/aguamic.jpg'
+import bodysplash from './../../imagenes/assets/PRODUCTOS/MILANO/bodysplash.jpg'
+import crema from './../../imagenes/assets/PRODUCTOS/MILANO/crema.jpg'
+import jabon from './../../imagenes/assets/PRODUCTOS/MILANO/jabon.jpg'
+import miniperf from './../../imagenes/assets/PRODUCTOS/MILANO/miniperf.jpg'
+import perfume from './../../imagenes/assets/PRODUCTOS/MILANO/perfume.jpg'
+
+import kitaromas from './../../imagenes/assets/PRODUCTOS/REGALOS/kitaromas.jpg'
+import kitaromatico from './../../imagenes/assets/PRODUCTOS/REGALOS/kitaromatico.jpg'
+import kitdeco from './../../imagenes/assets/PRODUCTOS/REGALOS/kitdeco.jpg'
+import kitenergia from './../../imagenes/assets/PRODUCTOS/REGALOS/kitenergia.jpg'
+import kitfacial from './../../imagenes/assets/PRODUCTOS/REGALOS/kitfacial.jpg'
+import kittfacialcompleto from './../../imagenes/assets/PRODUCTOS/REGALOS/kittfacialcompleto.jpg'
+import kitmini from './../../imagenes/assets/PRODUCTOS/REGALOS/kitmini.jpg'
+import kitrelax from './../../imagenes/assets/PRODUCTOS/REGALOS/kitrelax.jpg'
+
+import bomb7chacras from './../../imagenes/assets/PRODUCTOS/SAGRADAMADRE/bomb7chacras.jpg'
+import bombitas from './../../imagenes/assets/PRODUCTOS/SAGRADAMADRE/bombitas.jpg'
+import carbondef from './../../imagenes/assets/PRODUCTOS/SAGRADAMADRE/carbondef.jpg'
+import cuenco from './../../imagenes/assets/PRODUCTOS/SAGRADAMADRE/cuenco.jpg'
+import perlas from './../../imagenes/assets/PRODUCTOS/SAGRADAMADRE/perlas.jpg'
+import sahumeco from './../../imagenes/assets/PRODUCTOS/SAGRADAMADRE/sahumeco.jpg'
+import sahumhierba from './../../imagenes/assets/PRODUCTOS/SAGRADAMADRE/sahumhierba.jpg'
+import sahumitos from './../../imagenes/assets/PRODUCTOS/SAGRADAMADRE/sahumitos.jpg'
+import sahumnat from './../../imagenes/assets/PRODUCTOS/SAGRADAMADRE/sahumnat.jpg'
+
+import aceitea from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/aceitea.jpg'
+import aerosola from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/aerosola.jpg'
+import aerosols from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/aerosols.jpg'
+import aircool from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/aircool.jpg'
+import caritas from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/caritas.jpg'
+import difuprem from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/difuprem.jpg'
+import difusor from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/difusor.jpg'
+import equipo from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/equipo.jpg'
+import esencias from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/esencias.jpg'
+import home from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/home.jpg'
+import hornillos from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/hornillos.jpg'
+import latitas from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/latitas.jpg'
+import minis from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/minis.jpg'
+import route from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/route.jpg'
+import sensaciones from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/sensaciones.jpg'
+import tarjetas from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/tarjetas.jpg'
+import texmundial from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/texmundial.jpg'
+import textila from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/textila.jpg'
+import textils from './../../imagenes/assets/PRODUCTOS/SAPHIRUS/textils.jpg'
+
+import blusafloral from './../../imagenes/assets/PRODUCTOS/REMERAS/blusafloral.jpg'
+import remeraamabilidad from './../../imagenes/assets/PRODUCTOS/REMERAS/remeraamabilidad.jpg'
+import remeraamor from './../../imagenes/assets/PRODUCTOS/REMERAS/remeraamor.jpg'
+import remeracartas from './../../imagenes/assets/PRODUCTOS/REMERAS/remeracartas.jpg'
+import remeracorazones from './../../imagenes/assets/PRODUCTOS/REMERAS/remeracorazones.jpg'
+import remeraflores from './../../imagenes/assets/PRODUCTOS/REMERAS/remeraflores.jpg'
+import remeramirar from './../../imagenes/assets/PRODUCTOS/REMERAS/remeramirar.jpg'
+import remeramoon from './../../imagenes/assets/PRODUCTOS/REMERAS/remeramoon.jpg'
+import remeraojitos from './../../imagenes/assets/PRODUCTOS/REMERAS/remeraojitos.jpg'
+import remeraojos from './../../imagenes/assets/PRODUCTOS/REMERAS/remeraojos.jpg'
+import remeraosito from './../../imagenes/assets/PRODUCTOS/REMERAS/remeraosito.jpg'
+import remeraproteccion from './../../imagenes/assets/PRODUCTOS/REMERAS/remeraproteccion.jpg'
+import remerasamab from './../../imagenes/assets/PRODUCTOS/REMERAS/remerasamab.jpg'
+import remeravibraalto from './../../imagenes/assets/PRODUCTOS/REMERAS/remeravibraalto.jpg'
+import remeravuelaalto from './../../imagenes/assets/PRODUCTOS/REMERAS/remeravuelaalto.jpg'
+import remerayinyang from './../../imagenes/assets/PRODUCTOS/REMERAS/remerayinyang.jpg'
+import remeronlove from './../../imagenes/assets/PRODUCTOS/REMERAS/remeronlove.jpg'
+import remeronrolling from './../../imagenes/assets/PRODUCTOS/REMERAS/remeronrolling.jpg'
+
 const listProd = [automate,maderate, mateava,matedeco, matepampa, matermico,
-                budhasmed, budhasmini, cascada, hornocoraz,hornoelef,hornohindu, hornopetalos, hornorombo, lampbudha, lampfenshui]
+            budhasmed, budhasmini, cascada, hornocoraz,hornoelef,hornohindu, hornopetalos, hornorombo, lampbudha, lampfenshui,
+            conos,sahum,velamandala, velasblancas, velascolor, velasoja, velitasarom,velitasoja,veloncitos,
+            aguamic,bodysplash,crema,jabon,miniperf,perfume,
+            kitaromas, kitaromatico, kitdeco, kitenergia, kitfacial, kittfacialcompleto, kitmini,kitrelax,
+            bomb7chacras,bombitas,carbondef, cuenco,perlas, sahumeco, sahumhierba, sahumitos,sahumnat,
+            aceitea,aerosola,aerosols,aircool,caritas,difuprem,difusor,equipo,esencias,home,hornillos,latitas,minis,route,sensaciones,tarjetas,texmundial,textila,textils,
+            blusafloral,remeraamabilidad,remeraamor,remeracartas,remeracorazones,remeraflores,remeramirar,remeramoon,remeraojitos,remeraojos,remeraosito,remeraproteccion,
+            remerasamab,remeravibraalto,remeravuelaalto,remerayinyang,remeronlove,remeronrolling]
 
 export default listProd

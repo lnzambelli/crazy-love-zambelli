@@ -32,7 +32,7 @@ const Productos = () => {
 
   const obtenerLista = async () => {
     const productList = listItems.filter(doc => doc.category === category)
-    const arrPortadas = [saphirus, milano, mates, regalos, sagrada, decoracion, , iluminarte, remeras ];
+    const arrPortadas = [saphirus, milano, mates, regalos, sagrada, decoracion, iluminarte, remeras];
     setUrlCategory(arrPortadas.find(cat => cat.includes(category)))
     return setProducts(productList)
   }

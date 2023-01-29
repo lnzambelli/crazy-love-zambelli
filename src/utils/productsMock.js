@@ -81,7 +81,7 @@ const listItems = [
         price : 1500,
         category:"regalos",
         quantity: 1,
-        urlImg: '/assets/productos/regalos/kitaromas.jpg',
+        urlImg: 'kitaromas',
         urlImgFrag: '',
     },
     {
@@ -92,7 +92,7 @@ const listItems = [
         price : 1600,
         category:"regalos",
         quantity: 1,
-        urlImg: '/assets/productos/regalos/kitaromatico.jpg',
+        urlImg: 'kitaromatico',
         urlImgFrag: '',
     },
     {
@@ -103,7 +103,7 @@ const listItems = [
         price : 3600,
         category:"regalos",
         quantity: 1,
-        urlImg: '/assets/productos/regalos/kitdeco.jpg',
+        urlImg: 'kitdeco',
         urlImgFrag: '',
     },
     {
@@ -114,7 +114,7 @@ const listItems = [
         price : 600,
         category:"regalos",
         quantity: 1,
-        urlImg: '/assets/productos/regalos/kitenergia.jpg',
+        urlImg: 'kitenergia',
         urlImgFrag: '',
     },
     {
@@ -125,7 +125,7 @@ const listItems = [
         price : 2600,
         category:"regalos",
         quantity: 1,
-        urlImg: '/assets/productos/regalos/kitfacial.jpg',
+        urlImg: 'kitfacial',
         urlImgFrag: '',
     },
     {
@@ -136,7 +136,7 @@ const listItems = [
         price : 6500,
         category:"regalos",
         quantity: 1,
-        urlImg: '/assets/productos/regalos/kitfacialcompleto.jpg',
+        urlImg: 'kittfacialcompleto',
         urlImgFrag: '',
     },
     {
@@ -147,7 +147,7 @@ const listItems = [
         price : 300,
         category:"regalos",
         quantity: 1,
-        urlImg: '/assets/productos/regalos/kitmini.jpg',
+        urlImg: 'kitmini',
         urlImgFrag: '',
     },
     {
@@ -158,7 +158,7 @@ const listItems = [
         price : 2400,
         category:"regalos",
         quantity: 1,
-        urlImg: '/assets/productos/regalos/kitrelax.jpg',
+        urlImg: 'kitrelax',
         urlImgFrag: '',
     },
 
@@ -285,7 +285,7 @@ const listItems = [
         price : 160,
         category:"iluminarte",
         quantity: 1,
-        urlImg: '/assets/productos/iluminarte/conos.jpg',
+        urlImg: 'conos',
         urlImgFrag: '',
     },
     {
@@ -296,7 +296,7 @@ const listItems = [
         price : 300,
         category:"iluminarte",
         quantity: 1,
-        urlImg: '/assets/productos/iluminarte/sahum.jpg',
+        urlImg: 'sahum',
         urlImgFrag: '',
     },
     {
@@ -307,7 +307,7 @@ const listItems = [
         price : 1000,
         category:"iluminarte",
         quantity: 1,
-        urlImg: '/assets/productos/iluminarte/velamandala.jpg',
+        urlImg: 'velamandala',
         urlImgFrag: '',
     },
     {
@@ -318,7 +318,7 @@ const listItems = [
         price : 1250,
         category:"iluminarte",
         quantity: 1,
-        urlImg: '/assets/productos/iluminarte/velasblancas.jpg',
+        urlImg: 'velasblancas',
         urlImgFrag: '',
     },
     {
@@ -329,7 +329,7 @@ const listItems = [
         price : 480,
         category:"iluminarte",
         quantity: 1,
-        urlImg: '/assets/productos/iluminarte/velascolor.jpg',
+        urlImg: 'velascolor',
         urlImgFrag: '',
     },
     {
@@ -340,7 +340,7 @@ const listItems = [
         price : 1200,
         category:"iluminarte",
         quantity: 1,
-        urlImg: '/assets/productos/iluminarte/velasoja.jpg',
+        urlImg: 'velasoja',
         urlImgFrag: '',
     },
     {
@@ -353,7 +353,7 @@ const listItems = [
         price : 700,
         category:"iluminarte",
         quantity: 1,
-        urlImg: '/assets/productos/iluminarte/velitasarom.jpg',
+        urlImg: 'velitasarom',
         urlImgFrag: '',
     },
     {
@@ -364,7 +364,7 @@ const listItems = [
         price : 550,
         category:"iluminarte",
         quantity: 1,
-        urlImg: '/assets/productos/iluminarte/velitasoja.jpg',
+        urlImg: 'velitasoja',
         urlImgFrag: '',
     },
     {
@@ -377,7 +377,7 @@ const listItems = [
         price : 260,
         category:"iluminarte",
         quantity: 1,
-        urlImg: '/assets/productos/iluminarte/veloncitos.jpg',
+        urlImg: 'veloncitos',
         urlImgFrag: '',
     },
 
@@ -390,7 +390,7 @@ const listItems = [
         price : 1300,
         category:"milano",
         quantity: 1,
-        urlImg: '/assets/productos/milano/aguamic.jpg',
+        urlImg: 'aguamic',
         urlImgFrag: '',
     },
     {
@@ -402,7 +402,7 @@ const listItems = [
         price : 950,
         category:"milano",
         quantity: 1,
-        urlImg: '/assets/productos/milano/bodysplash.jpg',
+        urlImg: 'bodysplash',
         urlImgFrag: '',
     },
     {
@@ -414,7 +414,7 @@ const listItems = [
         price : 770,
         category:"milano",
         quantity: 1,
-        urlImg: '/assets/productos/milano/crema.jpg',
+        urlImg: 'crema',
         urlImgFrag: '',
     },
     {
@@ -425,7 +425,7 @@ const listItems = [
         price : 450,
         category:"milano",
         quantity: 1,
-        urlImg: '/assets/productos/milano/jabon.jpg',
+        urlImg: 'jabon',
         urlImgFrag: '',
     },
     {
@@ -442,7 +442,7 @@ const listItems = [
         price : 1800,
         category:"milano",
         quantity: 1,
-        urlImg: '/assets/productos/milano/perfume.jpg',
+        urlImg: 'perfume',
         urlImgFrag: '',
     },
     {
@@ -455,7 +455,7 @@ const listItems = [
         price : 800,
         category:"milano",
         quantity: 1,
-        urlImg: '/assets/productos/milano/miniperf.jpg',
+        urlImg: '/miniperf',
         urlImgFrag: '',
     },
 
@@ -472,7 +472,7 @@ const listItems = [
         price : 250,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/aceitea.jpg',
+        urlImg: 'aceitea',
         urlImgFrag: '',
     },
     {
@@ -487,7 +487,7 @@ const listItems = [
         price : 520,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/aerosola.jpg',
+        urlImg: 'aerosola',
         urlImgFrag: '',
     },
     {
@@ -513,7 +513,7 @@ const listItems = [
         price : 650,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/aerosols.jpg',
+        urlImg: 'aerosols',
         urlImgFrag: '',
     },
     {
@@ -525,7 +525,7 @@ const listItems = [
         price : 630,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/aircool.jpg',
+        urlImg: 'aircool',
         urlImgFrag: '',
     },
     {
@@ -536,7 +536,7 @@ const listItems = [
         price : 420,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/caritas.jpg',
+        urlImg: 'caritas',
         urlImgFrag: '',
     },
     {
@@ -550,7 +550,7 @@ const listItems = [
         price : 1700,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/difuprem.jpg',
+        urlImg: 'difuprem',
         urlImgFrag: '',
     },
     {
@@ -573,7 +573,7 @@ const listItems = [
         price : 670,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/difusor.jpg',
+        urlImg: 'difusor',
         urlImgFrag: '',
     },
     {
@@ -584,7 +584,7 @@ const listItems = [
         price : 2100,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/equipo.jpg',
+        urlImg: 'equipo',
         urlImgFrag: '',
     },
     {
@@ -599,7 +599,7 @@ const listItems = [
         price : 380,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/esencias.jpg',
+        urlImg: 'esencias',
         urlImgFrag: '',
     },
     {
@@ -615,7 +615,7 @@ const listItems = [
         price : 880,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/home.jpg',
+        urlImg: 'home',
         urlImgFrag: '',
     },
     {
@@ -626,7 +626,7 @@ const listItems = [
         price : 880,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/hornillos.jpg',
+        urlImg: 'hornillos',
         urlImgFrag: '',
     },
     {
@@ -638,7 +638,7 @@ const listItems = [
         price : 1150,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/latitas.jpg',
+        urlImg: 'latitas',
         urlImgFrag: '',
     },
     {
@@ -653,7 +653,7 @@ const listItems = [
         price : 360,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/minis.jpg',
+        urlImg: 'minis',
         urlImgFrag: '',
     },
     {
@@ -665,7 +665,7 @@ const listItems = [
         price : 420,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/route.jpg',
+        urlImg: 'route',
         urlImgFrag: '',
     },
     {
@@ -677,7 +677,7 @@ const listItems = [
         price : 490,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/sensaciones.jpg',
+        urlImg: 'sensaciones',
         urlImgFrag: '',
     },
     {
@@ -689,7 +689,7 @@ const listItems = [
         price : 800,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/tarjetas.jpg',
+        urlImg: 'tarjetas',
         urlImgFrag: '',
     },
     {
@@ -704,7 +704,7 @@ const listItems = [
         price : 310,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/textila.jpg',
+        urlImg: 'textila',
         urlImgFrag: '',
     },
     {
@@ -725,7 +725,7 @@ const listItems = [
         price : 470,
         category:"saphirus",
         quantity: 1,
-        urlImg: '/assets/productos/saphirus/textils.jpg',
+        urlImg: 'textils',
         urlImgFrag: '',
     },
     // *********** CATEGORIA SAGRADA MADRE ***********
@@ -737,7 +737,7 @@ const listItems = [
         price : 380,
         category:"sagrada",
         quantity: 1,
-        urlImg: '/assets/productos/sagradamadre/bomb7chacras.jpg',
+        urlImg: 'bomb7chacras',
         urlImgFrag: '',
     },
     {
@@ -749,7 +749,7 @@ const listItems = [
         price : 200,
         category:"sagrada",
         quantity: 1,
-        urlImg: '/assets/productos/sagradamadre/bombitas.jpg',
+        urlImg: 'bombitas',
         urlImgFrag: '',
     },
     {
@@ -760,7 +760,7 @@ const listItems = [
         price : 40,
         category:"sagrada",
         quantity: 1,
-        urlImg: '/assets/productos/sagradamadre/carbondef.jpg',
+        urlImg: 'carbondef',
         urlImgFrag: '',
     },
     {
@@ -771,7 +771,7 @@ const listItems = [
         price : 420,
         category:"sagrada",
         quantity: 1,
-        urlImg: '/assets/productos/sagradamadre/cuenco.jpg',
+        urlImg: 'cuenco',
         urlImgFrag: '',
     },
     {
@@ -784,7 +784,7 @@ const listItems = [
         price : 310,
         category:"sagrada",
         quantity: 1,
-        urlImg: '/assets/productos/sagradamadre/perlas.jpg',
+        urlImg: 'perlas',
         urlImgFrag: '',
     },
     {
@@ -798,7 +798,7 @@ const listItems = [
         price : 370,
         category:"sagrada",
         quantity: 1,
-        urlImg: '/assets/productos/sagradamadre/sahumeco.jpg',
+        urlImg: 'sahumeco',
         urlImgFrag: '',
     },
     {
@@ -810,7 +810,7 @@ const listItems = [
         price : 390,
         category:"sagrada",
         quantity: 1,
-        urlImg: '/assets/productos/sagradamadre/sahumhierba.jpg',
+        urlImg: 'sahumhierba',
         urlImgFrag: '',
     },
     {
@@ -822,7 +822,7 @@ const listItems = [
         price : 300,
         category:"sagrada",
         quantity: 1,
-        urlImg: '/assets/productos/sagradamadre/sahumitos.jpg',
+        urlImg: 'sahumitos',
         urlImgFrag: '',
     },
     {
@@ -835,7 +835,7 @@ const listItems = [
         price : 380,
         category:"sagrada",
         quantity: 1,
-        urlImg: '/assets/productos/sagradamadre/sahumnat.jpg',
+        urlImg: 'sahumnat',
         urlImgFrag: '',
     },
     // *********** CATEGORIA REMERAS ***********
@@ -847,7 +847,7 @@ const listItems = [
         price : 1900,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/blusafloral.jpg',
+        urlImg: 'blusafloral',
         urlImgFrag: '',
     },
     {
@@ -858,7 +858,7 @@ const listItems = [
         price : 2300,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeraamab.jpg',
+        urlImg: 'remerasamab',
         urlImgFrag: '',
     },
     {
@@ -869,7 +869,7 @@ const listItems = [
         price : 1000,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeraamabilidad.jpg',
+        urlImg: 'remeraamabilidad',
         urlImgFrag: '',
     },
     {
@@ -880,7 +880,7 @@ const listItems = [
         price : 1000,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeraamor.jpg',
+        urlImg: 'remeraamor',
         urlImgFrag: '',
     },
     {
@@ -891,7 +891,7 @@ const listItems = [
         price : 2300,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeracartas.jpg',
+        urlImg: 'remeracartas',
         urlImgFrag: '',
     },
     {
@@ -902,7 +902,7 @@ const listItems = [
         price : 2300,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeracorazones.jpg',
+        urlImg: 'remeracorazones',
         urlImgFrag: '',
     },
     {
@@ -913,7 +913,7 @@ const listItems = [
         price : 1000,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeraflores.jpg',
+        urlImg: 'remeraflores',
         urlImgFrag: '',
     },
     {
@@ -924,7 +924,7 @@ const listItems = [
         price : 2300,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeramirar.jpg',
+        urlImg: 'remeramirar',
         urlImgFrag: '',
     },
     {
@@ -935,7 +935,7 @@ const listItems = [
         price : 2300,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeramoon.jpg',
+        urlImg: 'remeramoon',
         urlImgFrag: '',
     },
     {
@@ -946,7 +946,7 @@ const listItems = [
         price : 2300,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeraojitos.jpg',
+        urlImg: 'remeraojitos',
         urlImgFrag: '',
     },
     {
@@ -957,7 +957,7 @@ const listItems = [
         price : 1000,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeraojos.jpg',
+        urlImg: 'remeraojos',
         urlImgFrag: '',
     },
     {
@@ -968,7 +968,7 @@ const listItems = [
         price : 1000,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeraosito.jpg',
+        urlImg: 'remeraosito',
         urlImgFrag: '',
     },
     {
@@ -979,7 +979,7 @@ const listItems = [
         price : 2300,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeraproteccion.jpg',
+        urlImg: 'remeraproteccion',
         urlImgFrag: '',
     },
     {
@@ -990,7 +990,7 @@ const listItems = [
         price : 1000,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeravibraalto.jpg',
+        urlImg: 'remeravibraalto',
         urlImgFrag: '',
     },
     {
@@ -1001,7 +1001,7 @@ const listItems = [
         price : 1200,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeravuelaalto.jpg',
+        urlImg: 'remeravuelaalto',
         urlImgFrag: '',
     },
     {
@@ -1012,7 +1012,7 @@ const listItems = [
         price : 2300,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remerayinyang.jpg',
+        urlImg: 'remerayinyang',
         urlImgFrag: '',
     },
     {
@@ -1023,7 +1023,7 @@ const listItems = [
         price : 1000,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeronlove.jpg',
+        urlImg: 'remeronlove',
         urlImgFrag: '',
     },
     {
@@ -1034,7 +1034,7 @@ const listItems = [
         price : 1000,
         category:"remeras",
         quantity: 1,
-        urlImg: '/assets/productos/remeras/remeronrolling.jpg',
+        urlImg: 'remeronrolling',
         urlImgFrag: '',
     },
 ]
