@@ -372,7 +372,7 @@ const listItems = [
         title : 'Veloncitos',
         description : "",
         options: ["Citronela","Champa","Esencias de la India","Frutilla", "Flores de Violetas",
-                "Lavanda","jazmín","Limón","Sándalo","Mango y Maracuyá","Pimpollo de Rosas",
+                "Lavanda","Jazmín","Limón","Sándalo","Mango y Maracuyá","Pimpollo de Rosas",
                 "Palo santo","Pomelo Naranja","Vainilla","Violeta", "Incienso"],
         price : 260,
         category:"iluminarte",

@@ -7,7 +7,7 @@ const ItemList = ({title, items}) => {
   return(
     <>
     <h1 className='titleProduct'></h1>
-    <Grid container spacing={2}>
+    <Grid container spacing={2} className='containerPpal'>
         {
             items.map( ({id,title,description, options,price,quantity, urlImg, urlImgFrag}) => {
 

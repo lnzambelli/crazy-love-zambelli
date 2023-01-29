@@ -2,3 +2,9 @@
     display: flex;
     justify-content: center;
 }
+
+.containerPpal{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
